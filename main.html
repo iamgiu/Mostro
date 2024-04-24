@@ -4,55 +4,40 @@
 
     <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostro</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        #countdown {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-
-        div {
-            margin-top: 30px;
-        }
-
-        h1 {
-            font-size: 100px;
-        }
-
-    </style>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href = "Immagini/HillBillyGragussy.png" rel = "icon">
+        <title>Mostro</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <h1>Devi aspettare ancora</h1>
+        <h1>TOCCA ASPETTARE CAPO PEFFOH</h1>
 
         <div id="countdown"></div>
 
         <a href="pagina_avventura.html" class="button type--B" id="startGame">
             <div class="button__line"></div>
             <div class="button__line"></div>
-            <span>PEDRO</span>
+            <span class="button__text">PEDRA ANCHE TU</span>
             <div class="button__drow1"></div>
             <div class="button__drow2"></div>
         </a>
 
+        <div>
+            <img src = "Immagini\wamasu.png" alt = "Wamasu">
+        </div>
+
+        <audio id="music" controls>
+            <source src="Audio\Pedro.mp3" />
+        </audio>
+
         <script>
+
         // Setta la data del compleanno
-        const birthday = new Date("2024-04-24");
+        const birthday = new Date("2024-06-18");
+
+        document.getElementById("startGame").style.display = "none";
 
         // Funzione per aggiornare il countdown
         function updateCountdown() {
@@ -67,6 +52,7 @@
             // Abilita il bottone se il countdown è finito
             if (daysLeft <= 0) {
                 document.getElementById("startGame").style.display = "block";
+                document.getElementById("countdown").style.display = "none";
             }
         }
 
@@ -79,11 +65,15 @@
             window.location.href = "pagina_avventura.html";
         });
 
+        function PlayMusic() {
+            var play=document.getElementById("music");
+            play.play();
+        }
+
+        $(document).ready(function(){
+        setTimeout(PlayMusic,3000);
+        })
+
         </script>
-        
-        <div>
-            <img src = "Immagini\wamasu.png" alt = "Wamasu">
-        </div>
-        
     </body>
 </html>
