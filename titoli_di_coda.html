@@ -5,17 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ringraziamenti</title>
+        <audio id="myAudio" controls>
+            <source src="Audio/AnotherLove.mp3" type="audio/mpeg">
+        </audio>
     </head>
 
     <body>
-        <audio id="myAudio" autoplay>
-            <source src="Audio\AnotherLove.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
           
           <script>
             window.onload = function() {
-                document.getElementById("myAudio").play();
+                audio = document.getElementById("myAudio");
+                audio.play();
             }
           </script>
 
