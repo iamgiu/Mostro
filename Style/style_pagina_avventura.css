@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #ccccff;
+}
+
+.content {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.interface {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Bottoni inventario, mappa e pg */
+.invButton, .mapButton, .pgButton {
+    position: absolute;
+    left: 1205px;
+}
+
+.invButton {
+    top: 546px;
+}
+
+.mapButton {
+    top: 600px;
+}
+
+.pgButton {
+    top: 654px;
+}
+
+.firma {
+    font-size: 20px;
+    font-weight : bold;
+    color : var(--line_color);
+    letter-spacing : 2px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.pgIcon {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.map {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+/* ID per gestire comparsa e scomparsa immagini */
+#backButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+/* Casa + ambiente casa */
+#showHouse {
+    position: absolute;
+    left: 60px;
+    top: 350px;
+}
+
+#house {
+    position: relative;
+}
+
+#ambientHouse {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    visibility: hidden;
+}
