@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <h1>TOCCA ASPETTARE CAPO PEFFOH</h1>
+        <h1 id = "titolo">TOCCA ASPETTARE CAPO PEFFOH</h1>
 
         <div id="countdown"></div>
 
@@ -35,7 +35,8 @@
         <script>
 
         // Setta la data del compleanno
-        const birthday = new Date("2024-04-25");
+        const birthday = new Date("2024-06-18");
+        const titolo = document.getElementById("titolo");
 
         document.getElementById("startGame").style.display = "none";
 
@@ -53,6 +54,14 @@
             if (daysLeft <= 0) {
                 document.getElementById("startGame").style.display = "block";
                 document.getElementById("countdown").style.display = "none";
+                // Ottieni il testo all'interno dell'elemento h1
+                var originalText = titolo.textContent;
+
+                // Sostituisci le parole desiderate
+                var modifiedText = originalText.replace('TOCCA ASPETTARE', 'CI SIAMO');
+
+                // Assegna il nuovo testo all'elemento h1
+                titolo.textContent = modifiedText;
             }
         }
 
