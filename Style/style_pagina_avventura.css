@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "ＭＳ Ｐゴシック";
+    font-weight: bold;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@ body {
 }
 
 .firma {
+    font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight : bold;
     color : var(--line_color);
@@ -64,6 +66,30 @@ body {
     top: 15px;
 }
 
+.imageOff, 
+#showHouse:hover .imageOn, 
+#showLagoNia:hover .imageOn, 
+#showBoscoPasketta:hover .imageOn,
+#showGragussySleeping:hover .imageOn,
+#showCampoBasket:hover .imageOn,
+#showNegozioScarpe:hover .imageOn,
+#showSalon:hover .imageOn,
+#showMonteMostro:hover .imageOn {
+    display: none;
+ }
+
+.imageOn, 
+#showHouse:hover .imageOff, 
+#showLagoNia:hover .imageOff, 
+#showBoscoPasketta:hover .imageOff,
+#showGragussySleeping:hover .imageOff,
+#showCampoBasket:hover .imageOff,
+#showNegozioScarpe:hover .imageOff,
+#showSalon:hover .imageOff,
+#showMonteMostro:hover .imageOff {
+    display: block;
+ }
+
 /* ID per gestire comparsa e scomparsa immagini */
 #backButton {
     position: absolute;
@@ -72,16 +98,84 @@ body {
     visibility: hidden;
 }
 
-/* Casa + ambiente casa */
+/* House */
 #showHouse {
     position: absolute;
-    left: 60px;
-    top: 350px;
+    left: 40px;
+    top: 370px;
 }
 
-#ambientHouse {
+/* Lago Nia */
+#showLagoNia {
+    position: absolute;
+    left: 170px;
+    top: 180px;
+}
+
+/* Bosco Pasketta */
+#showBoscoPasketta {
+    position: absolute;
+    left: 430px;
+    top: 90px;
+}
+
+/* Gragussy Sleeping */
+#showGragussySleeping {
+    position: absolute;
+    left: 750px;
+    top: 100px;
+}
+
+/* Campo Basket */
+#showCampoBasket {
+    position: absolute;
+    left: 500px;
+    top: 330px;
+}
+
+/* Negozio di Scarpe */
+#showNegozioScarpe {
+    position: absolute;
+    left: 650px;
+    top: 300px;
+}
+
+/* Salon */
+#showSalon {
+    position: absolute;
+    left: 1050px;
+    top: 360px;
+}
+
+/* Monte Mostro + ambiente Monte Mostro */
+#showMonteMostro {
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+}
+
+#ambientHouse,
+#ambientLagoNia,
+#ambientBoscoPasketta,
+#ambientGragussySleeping,
+#ambientCampoBasket, 
+#ambientNegozioScarpe, 
+#ambientSalon, 
+#ambientMonteMostro {
     position: absolute;
     left: 15px;
     top: 15px;
     visibility: hidden;
+}
+
+/* Box di testo */
+.textBox {
+    font-size: 25px;
+    text-align: start;
+    height: 150px;
+    width: 1045px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 15px;
 }
