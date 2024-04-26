@@ -79,10 +79,6 @@ body {
     top: 350px;
 }
 
-#house {
-    position: relative;
-}
-
 #ambientHouse {
     position: absolute;
     left: 15px;
