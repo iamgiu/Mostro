@@ -33,7 +33,7 @@ img {
     --back_color : #E9ECFF
   }
 
-  .button{
+.button{
     position : relative ;
     z-index : 0 ;
     width : 240px ;
