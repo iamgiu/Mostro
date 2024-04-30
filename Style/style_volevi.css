@@ -1,0 +1,58 @@
+body {
+    background-color: #ccffcc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative; /* Imposta il contenitore come posizione relativa */
+}
+
+h1 {
+    font-size: 90px;
+    font-weight : bold ;
+    color : var(--line_color) ;
+    letter-spacing : 2px ;
+}
+
+.gif-container {
+    position: absolute;
+}
+
+#gif-container-top {
+    top: -150px; /* Posizione 150px sopra l'h1 */
+    left: 50%; /* Centro orizzontale */
+    transform: translateX(-50%); /* Centra rispetto al contenitore */
+}
+
+#gif-container-bottom {
+    bottom: -150px; /* Posizione 150px sotto l'h1 */
+    left: 50%; /* Centro orizzontale */
+    transform: translateX(-50%); /* Centra rispetto al contenitore */
+}
+
+#gif-container-left {
+    top: 50%; /* Centro verticale */
+    left: 20px; /* Posizione 20px dalla sinistra */
+    transform: translateY(-50%); /* Centra rispetto al contenitore */
+}
+
+#gif-container-right {
+    top: 50%; /* Centro verticale */
+    right: 20px; /* Posizione 20px dalla destra */
+    transform: translateY(-50%); /* Centra rispetto al contenitore */
+}
+
+/* Rimani sulle stesse animazioni */
+#rotating-gif-top,
+#rotating-gif-bottom,
+#rotating-gif-left,
+#rotating-gif-right {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

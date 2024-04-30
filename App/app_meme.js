@@ -22,7 +22,7 @@ function updateCountdown() {
         var originalText = titolo.textContent;
 
         // Sostituisci le parole desiderate
-        var modifiedText = originalText.replace('TOCCA ASPETTARE', 'EH VOLEVI');
+        var modifiedText = originalText.replace('TOCCA ASPETTARE', 'CI SIAMO');
 
         // Assegna il nuovo testo all'elemento h1
         titolo.textContent = modifiedText;
