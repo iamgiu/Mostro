@@ -2,50 +2,62 @@ body {
     background-color: #ccffcc;
     font-family: Arial, sans-serif;
     text-align: center;
-    position: relative; /* Imposta il contenitore come posizione relativa */
 }
 
-h1 {
-    font-size: 90px;
-    font-weight : bold ;
-    color : var(--line_color) ;
-    letter-spacing : 2px ;
-}
-
-.gif-container {
+.gif_top {
     position: absolute;
+    top: 50px;
+    left: 42%;
 }
 
-#gif-container-top {
-    top: -150px; /* Posizione 150px sopra l'h1 */
-    left: 50%; /* Centro orizzontale */
-    transform: translateX(-50%); /* Centra rispetto al contenitore */
+.gif_left {
+    position: absolute;
+    left: 50px;
+    top: 40%;
 }
 
-#gif-container-bottom {
-    bottom: -150px; /* Posizione 150px sotto l'h1 */
-    left: 50%; /* Centro orizzontale */
-    transform: translateX(-50%); /* Centra rispetto al contenitore */
+.gif_right {
+    position: absolute;
+    right: 50px;
+    top: 40%;
 }
 
-#gif-container-left {
-    top: 50%; /* Centro verticale */
-    left: 20px; /* Posizione 20px dalla sinistra */
-    transform: translateY(-50%); /* Centra rispetto al contenitore */
+.gif_bottom {
+    position: absolute;
+    bottom: 100px;
+    left: 42%;
 }
 
-#gif-container-right {
-    top: 50%; /* Centro verticale */
-    right: 20px; /* Posizione 20px dalla destra */
-    transform: translateY(-50%); /* Centra rispetto al contenitore */
+.volevi_capo {
+    position: absolute;
+    font-size: 90px;
+    top: 38%;
+    left: 30%;
+}
+
+.spanne {
+    position: absolute;
+    font-size: 10px;
+    top: 50%;
+    left: 47%;
 }
 
 /* Rimani sulle stesse animazioni */
-#rotating-gif-top,
-#rotating-gif-bottom,
-#rotating-gif-left,
-#rotating-gif-right {
+.gif_top,
+.gif_bottom {
     animation: rotate 10s linear infinite;
+}
+
+.gif_left,
+.gif_right {
+    animation: rotateOpposite 10s linear infinite;
+}
+
+.kachow_image {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    animation: kachow 0.1s linear infinite;
 }
 
 @keyframes rotate {
@@ -54,5 +66,23 @@ h1 {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateOpposite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes kachow {
+    0% {
+        transform: translate(550%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }

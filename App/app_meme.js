@@ -1,5 +1,5 @@
 // Setta la data del compleanno
-const birthday = new Date("2024-05-01 00:00");
+const birthday = new Date("2024-05-02 00:00");
 const titolo = document.getElementById("titolo");
 
 document.getElementById("startGame").style.display = "none";
