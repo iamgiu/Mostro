@@ -1,4 +1,5 @@
 PRIMO DIALOGO: FRIEREN -> CASA
+    1 - Frieren.txt
 
 SECONDO DIALOGO: KILLUA -> LAGO NIA
     OBIETTIVO:
@@ -10,10 +11,10 @@ QUARTO DIALOGO: GRAGUSSY DORMIENTE
     OBIETTIVO:
 
 QUINTO DIALOGO: SHUBA & KIBA -> NEGOZIO DI SCARPE + POWER
-    OBIETTIVO:
+    OBIETTIVO: Rispondere a tot domande corrette sul basket per ottenere scarpe da pallacanestro
 
 SESTO DIALOGO: POWER -> CAMPETTO DA BASKET
-    OBIETTIVO:
+    OBIETTIVO: fare tot canestri giusti
 
 SETTIMO DIALOGO: BIBIK -> SALON
     OBIETTIVO:
