@@ -168,6 +168,21 @@ body {
     visibility: hidden;
 }
 
+#basketBack,
+#basketTop {
+    position: absolute;
+    left: 40%;
+    top: 30px;
+    visibility: hidden;
+}
+
+#basketball {
+    position: absolute;
+    left: 45%;
+    top: 120px;
+    visibility: hidden;
+}
+
 /* Box di testo */
 .textBox {
     font-size: 25px;
