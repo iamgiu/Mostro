@@ -41,13 +41,30 @@ function setImageInvisible() {
 
 function shootBall() {
     var ball = document.getElementById('basketball');
-    var hoop = document.getElementById('basketTop'); 
+    
+    //var gif1 = document.getElementById('basketGif1');
+    //var hoop = document.getElementById('basketTop'); 
 
     var randomAnimation = Math.floor(Math.random() * 4); // Genera un numero casuale da 0 a 3
 
     switch (randomAnimation) {
         case 0:
             // Animazione 1: Canestro
+            /*ball.style.visibility = 'hidden';
+
+            setTimeout(function() {
+                gif1.style.visibility = 'hidden';
+                ball.style.visibility = 'visible';
+            }, 3000);
+            
+            gif1.style.visibility = 'visible';
+            */
+
+            /*
+
+            In realtà non fa nulla?
+            
+            */
             ball.style.bottom = 'calc(100% - 100px)';
             setTimeout(function() {
                 ball.style.bottom = '0';
@@ -75,6 +92,11 @@ function shootBall() {
             break;
         case 3:
             // Animazione 4: Nessun Canestro
+            /*
+
+            In realtà fa canestro?
+
+            */
             ball.style.transition = 'transform 1s ease-in-out';
             setTimeout(function() {
                 ball.style.transform = 'translate(0, -400px)';

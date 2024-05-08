@@ -161,25 +161,26 @@ body {
 #ambientCampoBasket, 
 #ambientNegozioScarpe, 
 #ambientSalon, 
-#ambientMonteMostro {
+#ambientMonteMostro,
+#basketGif1 {
     position: absolute;
     left: 15px;
     top: 15px;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 #basketBack,
 #basketTop {
     position: absolute;
-    left: 40%;
-    top: 30px;
+    left: 539px;
+    top: 33px;
     visibility: hidden;
 }
 
 #basketball {
     position: absolute;
-    left: 45%;
-    top: 450px;
+    left: 609px;
+    top: 418px;
     visibility: hidden;
     cursor: pointer;
     transition: bottom 1s ease-in-out;
