@@ -38,3 +38,52 @@ function setImageInvisible() {
     if(id.length == 0)
         backButton.style.visibility = 'hidden';
 }
+
+function shootBall() {
+    var ball = document.getElementById('basketball');
+    var hoop = document.getElementById('basketTop'); 
+
+    var randomAnimation = Math.floor(Math.random() * 4); // Genera un numero casuale da 0 a 3
+
+    switch (randomAnimation) {
+        case 0:
+            // Animazione 1: Canestro
+            ball.style.bottom = 'calc(100% - 100px)';
+            setTimeout(function() {
+                ball.style.bottom = '0';
+            }, 1000);
+            break;
+        case 1:
+            // Animazione 2: Nessun Canestro
+            ball.style.transition = 'transform 1s ease-in-out';
+            setTimeout(function() {
+                ball.style.transform = 'translate(-150px, -400px)';
+            }, 100);
+            setTimeout(function() {
+                ball.style.transform = 'translate(0, 0)';
+            }, 1100);
+            break;
+        case 2:
+            // Animazione 3: Nessun Canestro
+            ball.style.transition = 'transform 1s ease-in-out';
+            setTimeout(function() {
+                ball.style.transform = 'translate(150px, -400px)';
+            }, 100);
+            setTimeout(function() {
+                ball.style.transform = 'translate(0, 0)';
+            }, 1100);
+            break;
+        case 3:
+            // Animazione 4: Nessun Canestro
+            ball.style.transition = 'transform 1s ease-in-out';
+            setTimeout(function() {
+                ball.style.transform = 'translate(0, -400px)';
+            }, 100);
+            setTimeout(function() {
+                ball.style.transform = 'translate(0, 0)';
+            }, 1100);
+            break;
+        default:
+            break;
+    }
+}
