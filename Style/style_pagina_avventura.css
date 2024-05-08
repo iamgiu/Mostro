@@ -179,8 +179,10 @@ body {
 #basketball {
     position: absolute;
     left: 45%;
-    top: 120px;
+    top: 450px;
     visibility: hidden;
+    cursor: pointer;
+    transition: bottom 1s ease-in-out;
 }
 
 /* Box di testo */
