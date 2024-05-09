@@ -1,10 +1,3 @@
-<!-- 
-    
-    NON CAMBIARE L'ORDINE DELLE IMMAGINI! 
-    SONO POSIZIONATE APPOSTA COSI'. 
-
--->
-
 <!DOCTYPE html>
 
 <html lang="it">
@@ -17,91 +10,92 @@
     </head>
     <body>
         <div class="content">
-            <!-- Icon, map and interface -->
-            <!--<img class="pgIcon" src="Immagini/Frieren.png">-->
+            <!-- Icon, map, ambients and interface -->
             <img class="pgIcon" src="Immagini/Characters/Shuba.png">
-            <img class="map" src="Immagini/Ambients/Map.png">
+            <img id="map" src="Immagini/Ambients/Map.png">
+
+            <img id="ambient">
+            <img id="animation">
+            <span id="score"></span>
+
             <img class="interface" src="Immagini/Interface.png">
             
             <!-- Map icons -->
-            <a id="showHouse" onclick="setImageVisible('ambientHouse')">
+            <a id="showHouse" onclick="setAmbient('House')">
                 <img class="imageOn" src="Immagini/Places/House.png">
                 <img class="imageOff" src="Immagini/Places/HouseSelected.png">
                 <span class="imageOff">Casa Cillo</span>
             </a>
             
-            <a id="showLagoNia" onclick="setImageVisible('ambientLagoNia')">
+            <a id="showLagoNia" onclick="setAmbient('LagoNia')">
                 <img class="imageOn" src="Immagini/Places/LagoNia.png">
                 <img class="imageOff" src="Immagini/Places/LagoNiaSelected.png">
                 <span class="imageOff">Lago Nia</span>
             </a>
 
-            <a id="showBoscoPasketta" onclick="setImageVisible('ambientBoscoPasketta')">
+            <a id="showBoscoPasketta" onclick="setAmbient('BoscoPasketta')">
                 <img class="imageOn" src="Immagini/Places/BoscoPasketta.png">
                 <img class="imageOff" src="Immagini/Places/BoscoPaskettaSelected.png">
                 <span class="imageOff">Bosco Pasketta</span>
             </a>
 
-            <a id="showGragussySleeping" onclick="setImageVisible('ambientGragussySleeping')">
+            <a id="showGragussySleeping" onclick="setAmbient('GragussySleeping')">
                 <img class="imageOn" src="Immagini/Places/GragussySleeping.png">
                 <img class="imageOff" src="Immagini/Places/GragussySleepingSelected.png">
                 <span class="imageOff">Gragussy</span>
             </a>
 
-            <a id="showCampoBasket" onclick="setImageVisible('ambientCampoBasket')">
+            <a id="showCampoBasket" onclick="setAmbient('CampoBasket')">
                 <img class="imageOn" src="Immagini/Places/CampoBasket.png">
                 <img class="imageOff" src="Immagini/Places/CampoBasketSelected.png">
                 <span class="imageOff">Campo da Basket</span>
             </a>
 
-            <a id="showNegozioScarpe" onclick="setImageVisible('ambientNegozioScarpe')">
+            <a id="showNegozioScarpe" onclick="setAmbient('NegozioScarpe')">
                 <img class="imageOn" src="Immagini/Places/NegozioScarpe.png">
                 <img class="imageOff" src="Immagini/Places/NegozioScarpeSelected.png">
                 <span class="imageOff">Negozio di Shuba</span>
             </a>
 
-            <a id="showSalon" onclick="setImageVisible('ambientSalon')">
+            <a id="showSalon" onclick="setAmbient('Salon')">
                 <img class="imageOn" src="Immagini/Places/Salon.png">
                 <img class="imageOff" src="Immagini/Places/SalonSelected.png">
                 <span class="imageOff">Salon</span>
             </a>
 
-            <a id="showMonteMostro" onclick="setImageVisible('ambientMonteMostro')">
+            <a id="showMonteMostro" onclick="setAmbient('MonteMostro')">
                 <img class="imageOn" src="Immagini/Places/MonteMostro.png">
                 <img class="imageOff" src="Immagini/Places/MonteMostroSelected.png">
                 <span class="imageOff">Monte Mostro</span>
             </a>
 
-            <!-- Ambients -->
-            <img id="ambientHouse" src="Immagini/Ambients/HouseAmbient.png">
-            <img id="ambientLagoNia" src="Immagini/Ambients/LagoNiaAmbient.png">
-            <img id="ambientBoscoPasketta" src="Immagini/Ambients/BoscoPaskettaAmbient.png">
-            <img id="ambientGragussySleeping" src="Immagini/Ambients/GragussySleepingAmbient.png">
-            <img id="ambientCampoBasket" src="Immagini/Ambients/CampoBasketAmbient.png">
-            <img id="basketBack" src="Immagini/BasketBack.png">
-            <img id="basketball" src="Immagini/Basketball.png" onclick="shootBall()">
-            <img id="basketTop" src="Immagini/BasketTop.png">
-            <!--<img id="basketGif1" src="Immagini/Basket1.gif">-->
-            <img id="ambientNegozioScarpe" src="Immagini/Ambients/NegozioScarpeAmbient.png">
-            <img id="ambientSalon" src="Immagini/Ambients/SalonAmbient.png">
-            <img id="ambientMonteMostro" src="Immagini/Ambients/MonteMostroAmbient.png">
+            <!-- Items with interactions -->
+            <img id="basketBack" src="Immagini/Basket/BasketBack.png">
+            <img id="basketball" src="Immagini/Basket/Basketball.png" onclick="shootBall()">
+            <img id="basketTop" src="Immagini/Basket/BasketTop.png">
+            <img class="can" id="can1" src="Immagini/Shooter/Can.png">
+            <img class="can" id="can2" src="Immagini/Shooter/Can.png">
+            <img class="can" id="can3" src="Immagini/Shooter/Can.png">
+            <img class="can" id="can4" src="Immagini/Shooter/Can.png">
+            <img class="can" id="can5" src="Immagini/Shooter/Can.png">
+            <img class="can" id="can6" src="Immagini/Shooter/Can.png">
+            <img id="hand" src="Immagini/Shooter/Hand.png">
 
             <!-- Buttons -->
             <a id="showBackButton">
-                <img id="backButton" src="Immagini/BackButton.png" onclick="setImageInvisible()">
+                <img id="backButton" src="Immagini/BackButton.png" onclick="setBackAmbient()">
             </a>
 
-            <div class="textBox">
+            <div id="textBox">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt nemo nesciunt, culpa dignissimos est cum in possimus minima non quo, animi delectus sunt quod pariatur, obcaecati numquam iusto quae?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab aliquam odio nisi! Ea culpa numquam soluta. Excepturi debitis velit, ullam aliquid deleniti ratione, labore accusamus doloremque consequatur ea voluptatum.
             </div>
+            
         </div>
 
         <p class="firma">By Bro's Company</p>
     </body>
 
     <script type="text/javascript" src="App/app_pagina_avventura.js"></script>
-    <!--<script type="text/javascript" src="App/libgif.js"></script>
-    <script type="text/javascript" src="App/rubbable.js"></script>-->
 
 </html>

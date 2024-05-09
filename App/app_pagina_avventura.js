@@ -1,111 +1,169 @@
-const id = [];
 var backButton = document.getElementById("backButton");
 
-// rende immagine visibile 
-function setImageVisible(idImg) {
-    var img = document.getElementById(idImg);
-    img.style.visibility = 'visible';
+/* Map */
+var map = document.getElementById('map');
+var mapElements = ['showHouse', 'showLagoNia', 'showBoscoPasketta', 'showGragussySleeping', 'showCampoBasket', 'showNegozioScarpe', 'showSalon', 'showMonteMostro']
+
+/* Ambient */
+var ambient = document.getElementById('ambient');
+var previousAmbient = "";
+var animation = document.getElementById('animation');
+
+/* Basket */
+var basketBack = document.getElementById('basketBack');
+var basketball = document.getElementById('basketball');
+var basketTop = document.getElementById('basketTop');
+var scoreElement = document.getElementById('score');
+
+/* Shooter */
+var shooterCans = ['can1', 'can2', 'can3', 'can4', 'can5', 'can6'];
+var shooterHand = document.getElementById('hand');
+
+/* Score */
+var score;
+
+/* Textbox */
+var textbox = document.getElementById('textBox');
+
+/* Imposta l'ambiente richiesto */
+function setAmbient(idAmbient) {
+    var changeTo = "Immagini/Ambients/" + idAmbient + "Ambient.png";
+    ambient.src = changeTo;
     backButton.style.visibility = 'visible';
 
-    if(idImg == 'ambientCampoBasket') {
-        var basketTop = document.getElementById('basketTop');
-        basketTop.style.visibility = 'visible';
-        var basketBack = document.getElementById('basketBack');
-        basketBack.style.visibility = 'visible';
-        var basketball = document.getElementById('basketball');
-        basketball.style.visibility = 'visible';
+    if(idAmbient == 'CampoBasket') {
+        setScore();
+        setBasket('visible');
     }
 
-    id.push(idImg);
-}
-
-// rende invisibile l'immagine precedentemente resa visibile
-function setImageInvisible() {
-    var pos = id.length - 1;
-    var img = document.getElementById(id[pos]);
-    img.style.visibility = 'hidden';
-
-    if(id[pos] == 'ambientCampoBasket') {
-        var basketTop = document.getElementById('basketTop');
-        basketTop.style.visibility = 'hidden';
-        var basketBack = document.getElementById('basketBack');
-        basketBack.style.visibility = 'hidden';
-        var basketball = document.getElementById('basketball');
-        basketball.style.visibility = 'hidden';
+    if(idAmbient == 'Salon') {
+        setScore();
+        setShooter('visible');
     }
 
-    id.pop();
-    if(id.length == 0)
-        backButton.style.visibility = 'hidden';
+    previousAmbient = idAmbient;
+
+    setMap('hidden');
+
+    console.log("Changed ambient to: " + changeTo);
 }
 
+/* Torna alla mappa */
+function setBackAmbient() {
+    ambient.src = "";
+    backButton.style.visibility = 'hidden';
+
+    if(previousAmbient == 'CampoBasket') {
+        setBasket('hidden');
+    }
+
+    if(previousAmbient == 'Salon') {
+        setShooter('hidden');
+    }
+
+    setMap('visible');
+
+    console.log("Reset ambient");
+}
+
+/* Imposta lo stato della mappa (visible/invisibile) */
+function setMap(status) {
+    map.style.visibility = status;
+    var current;
+
+    for (let i = 0; i < mapElements.length; i++) {
+        current = document.getElementById(mapElements[i]);
+        current.style.visibility = status;
+    }
+}
+
+/* Imposta lo stato del basket (visibile/invisibile) */
+function setBasket(status) {
+    basketTop.style.visibility = status;
+    basketball.style.visibility = status;
+    basketBack.style.visibility = status;
+    showScore();
+    scoreElement.style.visibility = status;
+}
+
+/* Imposta lo stato dello shooter (visibile/invisibile) */
+function setShooter(status) {
+    for (let i = 0; i < shooterCans.length; i++) {
+        current = document.getElementById(shooterCans[i]);
+        current.style.visibility = status;
+    }
+    shooterHand.style.visibility = status;
+    showScore();
+    scoreElement.style.visibility = status;
+}
+
+/* Gestione score */
+function setScore() {
+    score = 0;
+}
+
+function showScore() {
+    scoreElement.textContent = "Punteggio: " + score;
+}
+
+function addScore() {
+    score++;
+    scoreElement.textContent = "Punteggio: " + score;
+}
+
+/* Imposta animazione */
+function setAnimation(animationValue, watchTime) {
+    var animationSrc = "Immagini/" + animationValue + ".gif";
+    
+    setTimeout(function() {
+        animation.src = "";
+        setBasket('visible');
+        backButton.style.visibility = 'visible';
+    }, watchTime);
+
+    setBasket('hidden');
+    backButton.style.visibility = 'hidden';
+    animation.src = animationSrc;
+    
+    console.log("Changed animation to: " + animationSrc);
+}
+
+/* Lancio palla da basket */
 function shootBall() {
     var ball = document.getElementById('basketball');
-    
-    //var gif1 = document.getElementById('basketGif1');
-    //var hoop = document.getElementById('basketTop'); 
 
-    var randomAnimation = Math.floor(Math.random() * 4); // Genera un numero casuale da 0 a 3
+    //var randomAnimation = 2;
+    var randomAnimation = Math.floor(Math.random() * 3); // Genera un numero casuale da 0 a 3
 
     switch (randomAnimation) {
         case 0:
             // Animazione 1: Canestro
-            /*ball.style.visibility = 'hidden';
-
-            setTimeout(function() {
-                gif1.style.visibility = 'hidden';
-                ball.style.visibility = 'visible';
-            }, 3000);
-            
-            gif1.style.visibility = 'visible';
-            */
-
-            /*
-
-            In realtà non fa nulla?
-            
-            */
-            ball.style.bottom = 'calc(100% - 100px)';
-            setTimeout(function() {
-                ball.style.bottom = '0';
-            }, 1000);
+            setAnimation("Basket/Canestro", 4000);
+            addScore();
             break;
         case 1:
-            // Animazione 2: Nessun Canestro
-            ball.style.transition = 'transform 1s ease-in-out';
-            setTimeout(function() {
-                ball.style.transform = 'translate(-150px, -400px)';
-            }, 100);
-            setTimeout(function() {
-                ball.style.transform = 'translate(0, 0)';
-            }, 1100);
+            // Animazione 2: Canestro verso sinistra
+            setAnimation("Basket/MissCanestroSX", 3300);
             break;
         case 2:
-            // Animazione 3: Nessun Canestro
-            ball.style.transition = 'transform 1s ease-in-out';
-            setTimeout(function() {
-                ball.style.transform = 'translate(150px, -400px)';
-            }, 100);
-            setTimeout(function() {
-                ball.style.transform = 'translate(0, 0)';
-            }, 1100);
-            break;
-        case 3:
-            // Animazione 4: Nessun Canestro
-            /*
-
-            In realtà fa canestro?
-
-            */
-            ball.style.transition = 'transform 1s ease-in-out';
-            setTimeout(function() {
-                ball.style.transform = 'translate(0, -400px)';
-            }, 100);
-            setTimeout(function() {
-                ball.style.transform = 'translate(0, 0)';
-            }, 1100);
-            break;
+            // Animazione 3: Canestro verso destra
+            setAnimation("Basket/MissCanestroDX", 3300);
+            break; 
         default:
             break;
     }
+
+
+    // Vittoria
+    setTimeout (function() {
+        if (score == 5) {
+            alert("Congratulazioni!");
+        }
+    }, 4500);
+
+}
+
+/* Modifica testo della box */
+function changeText(content) {
+    textbox.textContent = content;
 }
