@@ -2,24 +2,25 @@ PRIMO DIALOGO: FRIEREN -> CASA
     1 - Frieren.txt
 
 SECONDO DIALOGO: KILLUA -> LAGO NIA
-    OBIETTIVO:
+    OBIETTIVO: Rispondere a domande su HxH. 
 
-TERZO DIALOGO: UTHAIME -> BOSCO PASKETTA
-    OBIETTIVO:
+TERZO DIALOGO: UTAHIME -> BOSCO PASKETTA
+    OBIETTIVO: Risolvere un puzzle.
 
 QUARTO DIALOGO: GRAGUSSY DORMIENTE
-    OBIETTIVO:
+    OBIETTIVO: Ottenere il barilozzo da Power.
 
 QUINTO DIALOGO: SHUBA & KIBA -> NEGOZIO DI SCARPE + POWER
-    OBIETTIVO: Rispondere a tot domande corrette sul basket per ottenere scarpe da pallacanestro
+    OBIETTIVO: Rispondere a tot domande corrette sul basket per ottenere scarpe da pallacanestro.
 
 SESTO DIALOGO: POWER -> CAMPETTO DA BASKET
-    OBIETTIVO: fare tot canestri giusti
+    OBIETTIVO: Fare tot canestri.
 
 SETTIMO DIALOGO: BIBIK -> SALON
-    OBIETTIVO:
+    OBIETTIVO: ? Sparare a delle lattine con proiettili dati dalle mani trattate da Bibik.
 
 OTTAVO DIALOGO: CONCLUSIONE AL MONTE MOSTRO
-    OBIETTIVO:
+    OBIETTIVO: ? Fare una domandina "facile" con un po' di suspence.
+        Esempio: "2+2 = cosa?" -> risposta: "un pesce"
 
 TITOLI DI CODA
