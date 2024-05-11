@@ -23,7 +23,10 @@ var shooterHand = document.getElementById('hand');
 var score;
 
 /* Textbox */
-var textbox = document.getElementById('textBox');
+var textBox = document.getElementById('textBox');
+
+/* Icon */
+var pgIcon = document.getElementById('pgIcon');
 
 /* Imposta l'ambiente richiesto */
 function setAmbient(idAmbient) {
@@ -164,5 +167,11 @@ function shootBall() {
 
 /* Modifica testo della box */
 function changeText(content) {
-    textbox.textContent = content;
+    textBox.textContent = content;
+}
+
+/* Modifica icona */
+function changeIcon(icon) {
+    var changeTo = "Immagini/Characters/" + icon + ".png";
+    pgIcon.src = changeTo;
 }
