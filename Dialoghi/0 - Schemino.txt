@@ -1,5 +1,4 @@
 PRIMO DIALOGO: FRIEREN -> CASA
-    1 - Frieren.txt
 
 SECONDO DIALOGO: KILLUA -> LAGO NIA
     OBIETTIVO: Rispondere a domande su HxH. 
