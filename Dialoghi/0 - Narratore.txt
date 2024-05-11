@@ -1,3 +1,7 @@
 Narratore:  Per iniziare l'avventura, prendi Casa Mi Chillo!
 
 Narratore:  Andiamo alla prossima zona!
+
+Narratore:  Uscito dal Bosco Pasketta, ti ritrovi in una vallata.
+            Prosegui per il sentiero, finchè davanti a te non trovi un ostacolo!
+            Andiamo a vedere cosa è... o meglio chi è!
