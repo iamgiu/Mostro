@@ -17,73 +17,39 @@ Narratore:  Il giovane si avvicina, pronto ad ascoltare la richiesta di aiuto di
             Tuttavia, prima che possa pronunciare una parola, il terreno inizia a tremare leggermente sotto i suoi piedi, e una voce risuona nell'aria, portando con sé un'eco di antica saggezza.
             E' l'antico protettore della foresta, Pasketta!
 
-# Tentato la rima?
-# versione originale
-    Pasketta:   Ascolta, viandante, e presta attenzione,
-                Se vuoi soccorrere Utahime, una prova è in azione.
-                Il Puzzle del Tridente ti sfiderà,
-                E solo risolvendolo la salverai.
+Pasketta:   Ascolta, viandante, e presta attenzione,
+            Se vuoi soccorrere Utahime, una prova è in azione.
+            Il Puzzle del Tridente ti sfiderà,
+            E solo risolvendolo la salvezza arriverà.
 
-                Ma sappi, o coraggioso, che il tempo è tiranno,
-                Entro il sorgere della luna piena, il tuo compito è sovrano.
-                Se fallisci nel tuo intento, se il Puzzle non risolvi,
-                Il male ancestrale si librerà, e il mondo soffrirà.
+            Ma sappi, o coraggioso, che il tempo è tiranno,
+            Entro il sorgere della luna piena, il tuo compito è sovrano.
+            Se fallisci nel tuo intento, se il Puzzle non è risolto,
+            Il male ancestrale si librerà, e il mondo soffrirà.
 
-                Così affronta la sfida, con coraggio e sapienza,
-                E salva Utahime, sconfiggi l'oscurità con coerenza.
-                Il destino del bosco, nelle tue mani è saldo,
-                Ora, viandante, affronta il tuo saldo.
-
-# versione modificata
-    Pasketta:   Ascolta, viandante, e presta attenzione,
-                Se vuoi soccorrere Utahime, una prova è in azione.
-                Il Puzzle del Tridente ti sfiderà,
-                E solo risolvendolo la salvezza arriverà.
-
-                Ma sappi, o coraggioso, che il tempo è tiranno,
-                Entro il sorgere della luna piena, il tuo compito è sovrano.
-                Se fallisci nel tuo intento, se il Puzzle non è risolto,
-                Il male ancestrale si librerà, e il mondo soffrirà.
-
-                Così affronta la sfida, con coraggio e sapienza,
-                E salva Utahime, sconfiggendo l'oscurità con coerenza.
-                Il destino del bosco nelle tue mani è fuggito,
-                Ora, viandante, affronta il tuo mito.
+            Così affronta la sfida, con coraggio e sapienza,
+            E salva Utahime, sconfiggendo l'oscurità con coerenza.
+            Il destino del bosco nelle tue mani è fuggito,
+            Ora, viandante, affronta il tuo mito.
 
 (parte il minigioco del puzzle) 
 
-# Tentato la rima?
-# versione originale
-    Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
-                Nel Puzzle del Tridente la vittoria hai colto.
-                Con ingegno e saggezza hai risolto l'enigma,
-                E Utahime ora dall'oscurità è libera e limpida.
+#caso di vittoria:
 
-                Il male ancestrale respinto è stato,
-                Grazie alla tua mente e al coraggio sognato.
-                La foresta ora festeggia la tua vittoria,
-                E il suo destino è illuminato nella gloria.
+Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
+            Nel Puzzle del Tridente la vittoria hai colto.
+            Con ingegno e saggezza hai risolto il mistero,
+            E Utahime ora dall'oscurità è libera e senza pensiero.
 
-                Che la tua luce risplenda sempre in questa terra,
-                E il tuo nome sia ricordato con gioia sincera.
-                Ora, viandante, continua il tuo cammino con fierezza,
-                E che il bene ti accompagni in ogni tua impresa.
+            Il male ancestrale respinto è stato,
+            Grazie alla tua mente e al coraggio sognato.
+            La foresta ora festeggia la tua vittoria,
+            E il suo destino è illuminato nella gloria.
 
-# versione modificata
-    Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
-                Nel Puzzle del Tridente la vittoria hai colto.
-                Con ingegno e saggezza hai risolto il mistero,
-                E Utahime ora dall'oscurità è libera e senza pensiero.
-
-                Il male ancestrale respinto è stato,
-                Grazie alla tua mente e al coraggio sognato.
-                La foresta ora festeggia la tua vittoria,
-                E il suo destino è illuminato nella gloria.
-
-                Che la tua luce risplenda sempre in questa terra,
-                E il tuo nome sia ricordato con gioia sincera.
-                Ora, viandante, continua il tuo cammino con fierezza,
-                E che il bene ti accompagni tramite risolutezza.
+            Che la tua luce risplenda sempre in questa terra,
+            E il tuo nome sia ricordato con gioia sincera.
+            Ora, viandante, continua il tuo cammino con fierezza,
+            E che il bene ti accompagni tramite risolutezza.
 
 Utahime:    Grazie, Cillo. Senza il tuo aiuto non so cosa sarebbe stato di me.
 
@@ -96,3 +62,9 @@ Narratore:  Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare u
             Seppur perplesso per il mistero che avvolge il mondo, Cillo si concentra sul compito che lo attende. 
             Con uno sguardo deciso verso l'orizzonte, continua il suo cammino attraverso il bosco incantato.
             La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde.
+
+#caso di perdita:
+  
+Narratore:  Ohi, viandante, ti trovi in difficoltà,
+            Ma non disperare, la fortuna è mutevole, è verità.
+            Basta, fare le rime non fa per me, riprova a fare sto puzzle prima che Pasketta scateni la sua ira su di noi, non vorrei morire oggi.

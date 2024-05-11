@@ -6,12 +6,10 @@ Narratore:  Il Lago Nia si staglia davanti al protagonista come un'enorme distes
 Cillo:      (sospirando) Come posso attraversare questo maledetto lago? Non vedo né ponti, né barche. 
             È come se non ci fosse via d'uscita...
 
-# Nuovo dialogo
 Narratore:  Alle sue spalle si avvicina una figura misteriosa con un enigmatico sorriso sul volto. 
 
 Killua:     Ciao là.
 
-# Nuovo dialogo
 Narratore:  Cillo si volta di scatto, spaventato.
 
 Cillo:      Oh! Killua?
@@ -46,7 +44,6 @@ Cillo:      Capito! Grazie mille, Killua!
 
 Killua:     Non c'è di che, Cillo. Buon cammino verso il Monte Mostro.
 
-# Dialogo aggiunto
 Narratore:  Cillo inizia il suo cammino, ma presto si accorge di una cosa...
 
 Cillo:      Aspetta, come fai a conoscermi?
@@ -56,3 +53,5 @@ Narratore:  Si gira nella direzione in cui si trovava Killua, ma non ci sta più
             Guarda ancora una volta il lago, con le istruzioni di Killua ancora in mente, e si avventura lungo la riva orientale.
 
 # In caso di perdita
+
+Narratore:  Si, ma mettici più impegno! Ti diamo un altro tentativo dai.
