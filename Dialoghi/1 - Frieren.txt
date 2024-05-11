@@ -44,5 +44,4 @@ Cillo:      Mi metterò in cammino, grazie Frieren.
 
 Frieren:    Che il vento sia alle tue spalle e la fortuna ti sorrida, viandante. 
             Il Monte Mostro ti attende, e con esso, il tuo destino. 
-                Buon viaggio.
-
+            Buon viaggio.
