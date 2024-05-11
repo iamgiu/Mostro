@@ -12,7 +12,26 @@ Uthaime:    Ho... ho bisogno del tuo aiuto.
             Mi sono... persa. Il bosco ha cambiato forma... non so come tornare a casa.
 
 Cillo:      Capisco. Anche io devo uscire da questo posto, ne usciremo insieme.
+    
+Narratore:  Ti avvicini, pronto ad ascoltare la richiesta di aiuto di Uthaime. 
+            Tuttavia, prima che possa pronunciare una parola, il terreno inizia a tremare leggermente sotto i suoi piedi, e una voce risuona nell'aria, portando con sé un'eco di antica saggezza.
+            E' l'antico protettore della foresta, Pasketta!
 
-Uthaime:    C'è un puzzle qui... un enigma che deve essere risolto per trovare la strada giusta. Ma ho paura... non riesco a farlo da sola.
+Pasketta:   Ascolta, viandante, e presta attenzione,
+            Se vuoi soccorrere Uthaime, una prova è in azione.
+            Il Puzzle del Tridente ti sfiderà,
+            E solo risolvendolo la salverai.
 
-Cillo:      
+            Ma sappi, o coraggioso, che il tempo è tiranno,
+            Entro il sorgere della luna piena, il tuo compito è sovrano.
+            Se fallisci nel tuo intento, se il Puzzle non risolvi,
+            Il male ancestrale si librerà, e il mondo soffrirà.
+
+            Così affronta la sfida, con coraggio e sapienza,
+            E salva Uthaime, sconfiggi l'oscurità con coerenza.
+            Il destino del bosco, nelle tue mani è saldo,
+            Ora, viandante, affronta il tuo saldo.
+
+(parte il minigioco del puzzle) 
+
+Pasketta:   
