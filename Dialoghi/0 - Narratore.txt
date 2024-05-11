@@ -1,10 +1,14 @@
+# INIZIO AVVENTURA
 Narratore:  Per iniziare l'avventura, prendi Casa Mi Chillo!
 
+# NELLA MAPPA
 Narratore:  Andiamo alla prossima zona!
 
+# PRIMA DI GRAGUSSY
 Narratore:  Uscito dal Bosco Pasketta, ti ritrovi in una vallata.
             Prosegui per il sentiero, finchè davanti a te non trovi un ostacolo!
             Andiamo a vedere cosa è... o meglio chi è!
 
+# DOPO GRAGUSSY
 Narratore:  Andiamo a vedere se sanno aiutarci con Gragussy!
 
