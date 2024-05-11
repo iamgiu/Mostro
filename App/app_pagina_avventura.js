@@ -153,7 +153,6 @@ function shootBall() {
             break;
     }
 
-
     // Vittoria
     setTimeout (function() {
         if (score == 5) {
