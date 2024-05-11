@@ -1,63 +1,98 @@
-Narratore:  Dopo aver attraversato il Lago Nia, ti addentri in un bosco avvolto da un'atmosfera misteriosa. 
+Narratore:  Dopo aver attraversato il Lago Nia, il nostro eroe si addentra in un bosco avvolto da un'atmosfera misteriosa. 
             Gli alberi, alti e possenti, si ergono come guardiani silenziosi, con rami che si intrecciano formando strane forme a tridente. 
             Il suolo è coperto da un tappeto di foglie secche, e il chiarore del sole che filtra attraverso le fronde crea giochi di luce e ombra, 
             conferendo al luogo un'aria magica e inquietante allo stesso tempo. 
-            È in questo scenario che ti imbatte in una figura solitaria, una giovane donna con un'aura di tristezza che la circonda.
+            È in questo scenario che si imbatte in una figura solitaria, una giovane donna con un'aura di tristezza che la circonda.
 
-Uthaime:    Aiuto... per favore, hai un momento?
+Utahime:    Aiuto... per favore, hai un momento?
 
-Cillo:      Uthaime? Certo, posso aiutarti? Cosa ti preoccupa?
+Cillo:      Utahime? Certo, posso aiutarti? Cosa ti preoccupa?
 
-Uthaime:    Ho... ho bisogno del tuo aiuto. 
+Utahime:    Ho... ho bisogno del tuo aiuto. 
             Mi sono... persa. Il bosco ha cambiato forma... non so come tornare a casa.
 
 Cillo:      Capisco. Anche io devo uscire da questo posto, ne usciremo insieme.
     
-Narratore:  Ti avvicini, pronto ad ascoltare la richiesta di aiuto di Uthaime. 
+Narratore:  Il giovane si avvicina, pronto ad ascoltare la richiesta di aiuto di Utahime. 
             Tuttavia, prima che possa pronunciare una parola, il terreno inizia a tremare leggermente sotto i suoi piedi, e una voce risuona nell'aria, portando con sé un'eco di antica saggezza.
             E' l'antico protettore della foresta, Pasketta!
 
-Pasketta:   Ascolta, viandante, e presta attenzione,
-            Se vuoi soccorrere Uthaime, una prova è in azione.
-            Il Puzzle del Tridente ti sfiderà,
-            E solo risolvendolo la salverai.
+# Tentato la rima?
+# versione originale
+    Pasketta:   Ascolta, viandante, e presta attenzione,
+                Se vuoi soccorrere Utahime, una prova è in azione.
+                Il Puzzle del Tridente ti sfiderà,
+                E solo risolvendolo la salverai.
 
-            Ma sappi, o coraggioso, che il tempo è tiranno,
-            Entro il sorgere della luna piena, il tuo compito è sovrano.
-            Se fallisci nel tuo intento, se il Puzzle non risolvi,
-            Il male ancestrale si librerà, e il mondo soffrirà.
+                Ma sappi, o coraggioso, che il tempo è tiranno,
+                Entro il sorgere della luna piena, il tuo compito è sovrano.
+                Se fallisci nel tuo intento, se il Puzzle non risolvi,
+                Il male ancestrale si librerà, e il mondo soffrirà.
 
-            Così affronta la sfida, con coraggio e sapienza,
-            E salva Uthaime, sconfiggi l'oscurità con coerenza.
-            Il destino del bosco, nelle tue mani è saldo,
-            Ora, viandante, affronta il tuo saldo.
+                Così affronta la sfida, con coraggio e sapienza,
+                E salva Utahime, sconfiggi l'oscurità con coerenza.
+                Il destino del bosco, nelle tue mani è saldo,
+                Ora, viandante, affronta il tuo saldo.
+
+# versione modificata
+    Pasketta:   Ascolta, viandante, e presta attenzione,
+                Se vuoi soccorrere Utahime, una prova è in azione.
+                Il Puzzle del Tridente ti sfiderà,
+                E solo risolvendolo la salvezza arriverà.
+
+                Ma sappi, o coraggioso, che il tempo è tiranno,
+                Entro il sorgere della luna piena, il tuo compito è sovrano.
+                Se fallisci nel tuo intento, se il Puzzle non è risolto,
+                Il male ancestrale si librerà, e il mondo soffrirà.
+
+                Così affronta la sfida, con coraggio e sapienza,
+                E salva Utahime, sconfiggendo l'oscurità con coerenza.
+                Il destino del bosco nelle tue mani è fuggito,
+                Ora, viandante, affronta il tuo mito.
 
 (parte il minigioco del puzzle) 
 
-Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
-            Nel Puzzle del Tridente la vittoria hai colto.
-            Con ingegno e saggezza hai risolto l'enigma,
-            E Uthaime ora dall'oscurità è libera e limpida.
+# Tentato la rima?
+# versione originale
+    Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
+                Nel Puzzle del Tridente la vittoria hai colto.
+                Con ingegno e saggezza hai risolto l'enigma,
+                E Utahime ora dall'oscurità è libera e limpida.
 
-            Il male ancestrale respinto è stato,
-            Grazie alla tua mente e al coraggio sognato.
-            La foresta ora festeggia la tua vittoria,
-            E il suo destino è illuminato nella gloria.
+                Il male ancestrale respinto è stato,
+                Grazie alla tua mente e al coraggio sognato.
+                La foresta ora festeggia la tua vittoria,
+                E il suo destino è illuminato nella gloria.
 
-            Che la tua luce risplenda sempre in questa terra,
-            E il tuo nome sia ricordato con gioia sincera.
-            Ora, viandante, continua il tuo cammino con fierezza,
-            E che il bene ti accompagni in ogni tua impresa.
+                Che la tua luce risplenda sempre in questa terra,
+                E il tuo nome sia ricordato con gioia sincera.
+                Ora, viandante, continua il tuo cammino con fierezza,
+                E che il bene ti accompagni in ogni tua impresa.
 
+# versione modificata
+    Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
+                Nel Puzzle del Tridente la vittoria hai colto.
+                Con ingegno e saggezza hai risolto il mistero,
+                E Utahime ora dall'oscurità è libera e senza pensiero.
 
-Uthaime:    Grazie, Cillo. Senza il tuo aiuto non so cosa sarebbe stato di me.
+                Il male ancestrale respinto è stato,
+                Grazie alla tua mente e al coraggio sognato.
+                La foresta ora festeggia la tua vittoria,
+                E il suo destino è illuminato nella gloria.
+
+                Che la tua luce risplenda sempre in questa terra,
+                E il tuo nome sia ricordato con gioia sincera.
+                Ora, viandante, continua il tuo cammino con fierezza,
+                E che il bene ti accompagni tramite risolutezza.
+
+Utahime:    Grazie, Cillo. Senza il tuo aiuto non so cosa sarebbe stato di me.
 
 Cillo:      Non c'è di che. 
             Ma come fai a sapere anche tu il mio nome? 
 
-Uthaime:    Segreto, in bocca al lupo per la tua missione.
+Utahime:    Segreto, in bocca al lupo per la tua missione.
   
-Narratore:  Uthaime si volta, un enigmatico sorriso sulle labbra, e senza dare ulteriori spiegazioni, scompare tra gli alberi, fondendosi con l'ombra del bosco misterioso. 
-            Seppur perplesso per il mistero che avvolge il mondo, ti concentri sul compito che ti attende. 
-            Con uno sguardo deciso verso l'orizzonte, continui il tuo cammino attraverso il bosco incantato.
+Narratore:  Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare ulteriori spiegazioni, scompare tra gli alberi, fondendosi con l'ombra del bosco misterioso. 
+            Seppur perplesso per il mistero che avvolge il mondo, Cillo si concentra sul compito che lo attende. 
+            Con uno sguardo deciso verso l'orizzonte, continua il suo cammino attraverso il bosco incantato.
             La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde.

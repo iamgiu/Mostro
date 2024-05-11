@@ -3,14 +3,18 @@ Narratore:  Il Lago Nia si staglia davanti al protagonista come un'enorme distes
             Il vento sibila tra gli alberi circostanti, portando con sé un senso di mistero e pericolo. 
             Il protagonista si ferma sulla riva, guardando in modo frustrato il lago apparentemente insormontabile.
 
-Cillo:      (sospirando) Come posso attraversare questo maledetto lago? Non vedo ponti, né barche. 
+Cillo:      (sospirando) Come posso attraversare questo maledetto lago? Non vedo né ponti, né barche. 
             È come se non ci fosse via d'uscita...
 
-(Da dietro le sue spalle, emerge Killua, con un sorriso enigmatico sul volto.)
+# Nuovo dialogo
+Narratore:  Alle sue spalle si avvicina una figura misteriosa con un enigmatico sorriso sul volto. 
 
 Killua:     Ciao là.
 
-Cillo:      (voltandosi di scatto) Oh! Killua?
+# Nuovo dialogo
+Narratore:  Cillo si volta di scatto, spaventato.
+
+Cillo:      Oh! Killua?
 
 Killua:     Esatto, sono io. 
             Ho sentito le tue lamentele sul Lago Nia. Sembrava che avessi bisogno di un po' di assistenza.
@@ -21,11 +25,12 @@ Killua:     Capisco. Ma non temere, ho una soluzione. Ma prima giochiamo un po'.
 
 Cillo:      Che genere di gioco?
 
-Killua:     Risponderai a qualche mia domanda, se risponderai ad almeno 7/10 domande corrette, ti aiuterò.
+Killua:     Risponderai a qualche mia domanda, se risponderai ad almeno 7 domande su 10, ti aiuterò.
             Ci stai?
 
 (pulsante di start e appaiono le domandeHXH.txt)
 
+# In caso di vittoria 
 Killua:     Wow, sei stato impressionante! 
             Hai risposto correttamente a tutte e sette le domande. 
             Sei pronto per scoprire come attraversare il lago?
@@ -39,10 +44,15 @@ Killua:     Allora, devi fare esattamente come ti dico.
 
 Cillo:      Capito! Grazie mille, Killua!
 
-Killua:     Non c'è di che Cillo. Buon cammino verso il Monte Mostro.
+Killua:     Non c'è di che, Cillo. Buon cammino verso il Monte Mostro.
 
-Cillo:      Aspetta come fai a conoscermi?
+# Dialogo aggiunto
+Narratore:  Cillo inizia il suo cammino, ma presto si accorge di una cosa...
 
-Narratore:  Ti giri nella direzione in cui si trovava Killua, ma non ci sta più nessuno.
-            Nel silenzio del bosco, solo il vento sussurra tra gli alberi, come se l'incontro con il misterioso giovane fosse stato solo un fugace sogno. 
-            Guardi ancora una volta il lago, con le istruzioni di Killua in mente, ti avventuri lungo la riva orientale.
+Cillo:      Aspetta, come fai a conoscermi?
+
+Narratore:  Si gira nella direzione in cui si trovava Killua, ma non ci sta più nessuno.
+            Nel silenzio del bosco, solo il vento sussurra tra gli alberi, come se l'incontro con il misterioso ragazzo fosse stato solo un fugace sogno. 
+            Guarda ancora una volta il lago, con le istruzioni di Killua ancora in mente, e si avventura lungo la riva orientale.
+
+# In caso di perdita
