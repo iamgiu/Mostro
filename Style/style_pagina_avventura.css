@@ -200,8 +200,8 @@ body {
 #score {
     font-size: 32px;
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 25px;
+    top: 20px;
     visibility: hidden;
 }
 
