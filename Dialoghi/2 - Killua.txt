@@ -54,4 +54,4 @@ Narratore:  Si gira nella direzione in cui si trovava Killua, ma non ci sta più
 
 # In caso di perdita
 
-Narratore:  Si, ma mettici più impegno! Ti diamo un altro tentativo dai.
+Narratore:  Si, ma mettici più impegno! Dai, ti diamo un altro tentativo.
