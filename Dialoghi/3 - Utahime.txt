@@ -65,6 +65,6 @@ Narratore:  Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare u
 
 #caso di perdita:
   
-Narratore:  Ohi, viandante, ti trovi in difficoltà,
-            Ma non disperare, la fortuna è mutevole, è verità.
+Narratore:  Oh, viandante, ti trovi in difficoltà,
+            Ma non disperare, la fortuna è mutevole, è la verità.
             Basta, fare le rime non fa per me, riprova a fare sto puzzle prima che Pasketta scateni la sua ira su di noi, non vorrei morire oggi.

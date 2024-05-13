@@ -126,15 +126,15 @@ body {
 /* Salon */
 #showSalon {
     position: absolute;
-    left: 1050px;
-    top: 360px;
+    left: 920px;
+    top: 150px;
 }
 
 /* Monte Mostro + ambiente Monte Mostro */
 #showMonteMostro {
     position: absolute;
     left: 1100px;
-    top: 50px;
+    top: 300px;
 }
 
 #ambient, #animation {

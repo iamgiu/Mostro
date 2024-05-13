@@ -1,9 +1,9 @@
-Narratore:  Entri nel Negozio delle Scarpe e subito sei avvolto da un'atmosfera accogliente e vivace. 
+Narratore:  Cillo entra nel Negozio delle Scarpe ed è subito avvolto da un'atmosfera accogliente e vivace. 
             Le pareti sono ricoperte da scaffali che ospitano una vasta selezione di calzature di ogni tipo e colore, mentre il profumo di cuoio e gomma mescolato con l'odore fresco 
             delle scarpe nuove riempie l'aria.
-            Dalla finestra entra il sole che splende brillante nel cielo. Sul balcone, il cane dal pelo folto, ti osserva con curiosità, 
+            Dalla finestra entra il sole che splende brillante nel cielo. Sul balcone, un cane dal pelo folto lo osserva con curiosità, 
             mentre tiene una scarpa tra le zampe con aria di sfida.
-            Anche il ragazzo dai ricci selvaggi smette di guardare il telefono per concentrarsi su di te.
+            Anche il ragazzo dai ricci selvaggi smette di guardare il telefono per concentrarsi su di lui.
 
 Shuba:      Bellaaaaaa Cillo, che ci fai qua?
 
@@ -15,7 +15,7 @@ Shuba:      Cosa ti porta qua?
 
 Cillo:      Cosa porta voi qui?
 
-Shuba:      Sei tu che sei nel nostro negozio, comunque lo sapevi che sono Leone ascendente Bilanca? Sono proprio io, leggi qua! 
+Shuba:      Sei tu che sei nel nostro negozio, comunque lo sapevi che sono Leone ascendente Bilancia? Sono proprio io, leggi qua! 
 
 Narratore:  Ti mostra (MOSTRO?) il cellulare, ma si vede una ragazza asiatica con le tette di fuori che balla.
 
@@ -31,7 +31,7 @@ Cillo:      La strada per il monte mostro è bloccata.
 
 Kiba:       Woof?
 
-Shuba:      Si, sicuramente è Gragussy Kiba.
+Shuba:      Si, sicuramente è Gragussy, Kiba.
 
 Cillo:      Esatto, avete idea di come posso farlo alzare?
 
@@ -39,12 +39,12 @@ Shuba:      Conosco qualcuno che ti può aiutare.
 
 Kiba:       Woof Woof Woof?!
 
-Shuba:      Si, dai se la caverà.
+Shuba:      Si, dai, se la caverà.
 
 Cillo:      Posso essere partecipe?
 
 Shuba:      Per andare in questo posto ti serviranno delle scarpe speciali. 
-            Le ho personalizzate io stesso, sai ci ho messo un sacco di tempo.
+            Le ho personalizzate io stesso. Sai, ci ho messo un sacco di tempo.
             Praticamente...
 
 Kiba:       Woof...
@@ -61,7 +61,7 @@ Shuba:      Rilassati un po'.
 
 Cillo:      Sono nel cill.
 
-Shuba:      Ste cazzo di battute dio.
+Shuba:      'Ste cazzo di battute, dio.
 
 Kiba:       Woof Woof?
 
