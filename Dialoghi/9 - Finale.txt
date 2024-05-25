@@ -1,11 +1,10 @@
-Narratore:  Dopo ore di cammino, finalmente raggiungi il Monte Mostro.
-            La cima del Monte Mostro è sorprendentemente tranquilla. 
-            Il terreno è pianeggiante e coperto da un sottile strato di erba verde, che ondeggia leggermente al vento. 
-            Al centro della cima, su un piedistallo di pietra antica, si trova il libro. 
-            Il piedistallo è decorato con incisioni intricate che raccontano storie di tempi passati. 
+Narratore:  Dopo ore di cammino, finalmente Cillo raggiunge il Monte Mostro.
+            La cima è sorprendentemente tranquilla. 
+            Il terreno è pianeggiante e coperto da un sottile strato di erba verde, che ondeggia leggermente al flebile venticello. 
             L'aria è serena e silenziosa, quasi surreale dopo il tumultuoso viaggio per arrivare fin qui.
-            Ti avvicini al libro, ma la curiosità è troppo grande e lo apri.
-            Guardi la prima pagina, è vuota. Giri la seconda ed è vuota pure quella, poi ne giri altre e sono vuote.
+            Al centro si trova un piedistallo, decorato con incisioni intricate che raccontano storie di tempi passati.
+            Cillo ci si avvicina, e nota un libro appoggiato sopra ad esso. La curiosità prende il sopravvento e lo apre.
+            Guarda la prima pagina ed è vuota. La seconda, la terza e la quarta anche, e così tutte le altre.
 
 Cillo:      Ma che cazzo?
 
@@ -15,12 +14,12 @@ Cillo:      Frieren? Ma il libro è bianco.
 
 Frieren:    E' bianco per gli stolti, ma con un po' di magia...
 
-Narratore:  Frieren si avvicina e sul libro compare una scritta.
+Narratore:  Frieren si avvicina e sul libro compare una scritta:
             "Quanto fa 2+2? PESCE!!!!"
 
 Cillo:      E' uno scherzo?
 
-Narratore:  Non ricevi risposta, quando alzi lo sguardo per cercare una risposta, l'elfa è scomparsa.
+Narratore:  Non riceve risposta. Quando alza lo sguardo per cercarla, l'elfa è scomparsa.
 
 Cillo:      Frieren?!
 
@@ -30,18 +29,18 @@ Cillo:      Dio, che palle.
 
 ???:        Woof!!!!!!
 
-Narratore:  Ti giri verso l'abbaio.
+Narratore:  Si gira verso l'abbaio.
 
 Cillo:      Kiba?
 
 Kiba:       Woof!!! Woof!!!
 
-Narratore:  Vai verso il cucciolo, che inizia a correre.
-            Lo segui fino a che non vedi una enorme tavolata e tutti gli amici incontrati fino ad ora durante la tua avventura radunati intorno ad una torta gigante.
+Narratore:  Cammina verso il cucciolo, che inizia a correre.
+            Lo segue fino a che non vede un'enorme tavolata e tutti gli amici incontrati fino ad ora radunati intorno ad una torta gigante.
+            In coro, procedono a dirti:
+            TANTI AUGURI!!!!!
 
-Coro:       TANTI AUGURI!!!!!
-
-Cillo:      Che significa? (tono sorpreso)
+Cillo:      Che significa?
 
 Frieren:    E' il tuo compleanno. 
 
@@ -49,21 +48,22 @@ Cillo:      E come lo sapete?
 
 Frieren:    Io non lo sapevo, gli altri si. Mi hanno costretto ad organizzarti tutto.
 
-Cillo:      Wow! Grazie...io-
+Cillo:      Wow! Grazie... io-
 
-Killua:     Non è finita qua amico mio.
+Killua:     Non è finita qua, amico mio.
 
 Cillo:      In che senso?
 
-Shuba:      Ajo mica ti abbiamo fatto fare tutta questa strada per niente...Cioè un po' si.
+Shuba:      Ajo, mica ti abbiamo fatto fare tutta questa strada per niente... cioè, un po' si.
 
 Frieren:    Guarda di nuovo il libro.
 
-Narratore:  Appare un codice......(mettere codice)
+Narratore:  Appare un codice...
+            (mettere codice)
 
-Cillo:      Cosa è?
+Cillo:      Cos'è?
 
-Power:      Il tuo regalo pazzoide.
+Power:      Il tuo regalo, pazzoide.
 
 Cillo:      Grazie ragazzi.
 
