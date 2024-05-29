@@ -1,9 +1,9 @@
 Narratore:  Il Lago Nia si staglia davanti al protagonista come un'enorme distesa d'acqua scura, riflettendo il cielo cupo e minaccioso sopra di esso. 
             Le sue acque sembrano muoversi con una lentezza inquietante, quasi come se fossero vive. 
             Il vento sibila tra gli alberi circostanti, portando con sé un senso di mistero e pericolo. 
-            Il protagonista si ferma sulla riva, guardando in modo frustrato il lago apparentemente insormontabile.
+            Il protagonista si ferma sulla riva, guardando in modo frustrato il lago apparentemente insormontabile e sospirando.
 
-Cillo:      (sospirando) Come posso attraversare questo maledetto lago? Non vedo né ponti, né barche. 
+Cillo:      Come posso attraversare questo maledetto lago? Non vedo né ponti, né barche. 
             È come se non ci fosse via d'uscita...
 
 Narratore:  Alle sue spalle si avvicina una figura misteriosa con un enigmatico sorriso sul volto. 
