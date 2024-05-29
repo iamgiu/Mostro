@@ -16,10 +16,10 @@ SESTO DIALOGO: POWER -> CAMPETTO DA BASKET
     OBIETTIVO: Fare tot canestri.
 
 SETTIMO DIALOGO: BIBIK -> SALON
-    OBIETTIVO: ? Sparare a delle lattine con proiettili dati dalle mani trattate da Bibik.
+    OBIETTIVO: Sparare a delle lattine con proiettili dati dalle mani trattate da Bibik.
 
 OTTAVO DIALOGO: CONCLUSIONE AL MONTE MOSTRO
-    OBIETTIVO: ? Fare una domandina "facile" con un po' di suspence.
+    OBIETTIVO: Fare una domandina "facile" con un po' di suspence.
         Esempio: "2+2 = cosa?" -> risposta: "un pesce"
 
 TITOLI DI CODA

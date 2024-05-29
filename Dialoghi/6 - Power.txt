@@ -1,26 +1,30 @@
-Narratore:  Ti allontani dal negozio di scarpe, indossando con orgoglio le nuove scarpe comode che hai appena ottenuto da Shuba. 
-            Con passo deciso, ti dirige verso il campetto da basket, sperando di trovare una soluzione al tuo problema.
-            Arrivato al campetto, ti fermi un attimo, scrutando l'area circostante. 
-            Ma il campo è deserto, solo un cespuglio che vola via.
+Narratore:  Cillo si allontana dal negozio, indossando con orgoglio le nuove scarpe comode che haa appena ottenuto da Shuba. 
+            Con passo deciso, si dirige verso il campetto da basket, sperando di trovare una soluzione al suo problema.
+            Arrivato al campetto, si ferma un attimo, scrutando l'area circostante. 
+            Ma il campo è deserto, vede solo un cespuglio che vola via.
+            Cillo sospira.
 
-Cillo:      (sospirando) Sembra che sia arrivato troppo tardi. 
-            Non c'è nessuno qui.
+Cillo:      Sembra che sia arrivato troppo tardi. Non c'è nessuno qui.
 
-Narratore:  Ma proprio quando stai per voltarti per tornare indietr, un rumore improvviso ti fa sobbalzare. 
-            Alzi lo sguardo e vedi Power, che plana dall'alto come se fosse caduta dal cielo.
+Narratore:  Proprio quando sta per voltarsi e tornare indietro, un rumore improvviso lo fa sobbalzare. 
+            Alza lo sguardo e vede Power, che plana dall'alto come se fosse caduta dal cielo.
 
 Cillo:      Power?
 
-Power:      Ah, Cillo, Cillo, Cillo... Sai quanto mi piaccia una bella partita a basket! 
+Power:      Ah, Cillo, Cillo, Cillo... Sai quanto mi piace una bella partita a basket! 
 
 Cillo:      In realtà no.
 
-Power:      (fa finta di non sentirlo) Quando ho sentito che avevi bisogno di un po' di aiuto, ho pensato: "Beh, è tempo di fare il mio ingresso!"
+Narratore:  Power fa finta di non sentirlo, continuando con il suo monologo.
+
+Power:      Quando ho sentito che avevi bisogno di un po' di aiuto, ho pensato: "Beh, è tempo di fare il mio ingresso!"
 
 Cillo:      Beh si, effettivamente c'è Gragussy che sta occupando la strada.
-            Shuba e Kiba mi hanno detto di venire qua, sai come aiutarmi.
+            Shuba e Kiba mi hanno detto di venire qua, dato che sai come aiutarmi.
 
-Power:      (Con fierezza) Certo, che so come aiutarti!
+Narratore:  Power si gonfia il petto con la fierezza di un demone e le iniziano a brillare gli occhi.
+
+Power:      Certo che so come aiutarti!
 
 Cillo:      Quindi?
 
@@ -28,17 +32,17 @@ Power:      Prima giochiamo un po'.
 
 Cillo:      Adesso?
 
-Power:      No, domani. Siii, adesso stupido di un umano.
+Power:      No, domani. Siii, adesso, stupido umano.
             Se mi farai 5 canestri, ti aiuterò.
 
 (Parte il minigioco)
 
-Power:      Lo ammetto è stato molto divertente vederti fallire, ma per mia sfortuna sei riuscito a fare i canestri prima del previsto.
-            Prendi questo barile, ti aiuterà a far svegliare il giagante obeso laggiù.
+Power:      Lo ammetto, è stato molto divertente vederti fallire, ma per mia sfortuna sei riuscito a fare i canestri prima del previsto.
+            Prendi questo barile, ti aiuterà a far svegliare il gigante obeso laggiù.
 
 Cillo:      Grazie. Posso farti ancora una domanda?
 
 Power:      Assolutamente no, mica sono qua a tua disposizione. Ora vai, devo trovare qualcosa da fare per ammazzare il tempo.
-            Ci sono! Ammmazzare! Cioè volevo dire, in bocca al lupo Cillo!
+            Ci sono! Ammmazzare! Cioè, volevo dire, in bocca al lupo Cillo!
 
-Narratore:  Un po' interdetto ritorni sui tuoi passi insieme al barile datoti dal demone. Speriamo sia utile.
+Narratore:  Un po' interdetto, Cillo ritorna sui suoi passi, insieme al barile datogli dal demone. Speriamo sia utile.

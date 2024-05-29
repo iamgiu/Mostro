@@ -34,7 +34,7 @@ Pasketta:   Ascolta, viandante, e presta attenzione,
 
 (parte il minigioco del puzzle) 
 
-#caso di vittoria:
+# CASO DI VITTORIA
 
 Pasketta:   Oh viandante valoroso, con gioia ti accolgo,
             Nel Puzzle del Tridente la vittoria hai colto.
@@ -63,7 +63,7 @@ Narratore:  Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare u
             Con uno sguardo deciso verso l'orizzonte, continua il suo cammino attraverso il bosco incantato.
             La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde.
 
-#caso di perdita:
+# CASO DI PERDITA
   
 Narratore:  Oh, viandante, ti trovi in difficoltà,
             Ma non disperare, la fortuna è mutevole, è la verità.

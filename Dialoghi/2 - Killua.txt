@@ -28,7 +28,8 @@ Killua:     Risponderai a qualche mia domanda, se risponderai ad almeno 7 domand
 
 (pulsante di start e appaiono le domandeHXH.txt)
 
-# In caso di vittoria 
+# CASO DI VITTORIA
+
 Killua:     Wow, sei stato impressionante! 
             Hai risposto correttamente a tutte e sette le domande. 
             Sei pronto per scoprire come attraversare il lago?
@@ -52,6 +53,6 @@ Narratore:  Si gira nella direzione in cui si trovava Killua, ma non ci sta più
             Nel silenzio del bosco, solo il vento sussurra tra gli alberi, come se l'incontro con il misterioso ragazzo fosse stato solo un fugace sogno. 
             Guarda ancora una volta il lago, con le istruzioni di Killua ancora in mente, e si avventura lungo la riva orientale.
 
-# In caso di perdita
+# CASO DI PERDITA
 
 Narratore:  Si, ma mettici più impegno! Dai, ti diamo un altro tentativo.
