@@ -1,0 +1,24 @@
+{
+    "narrator": [
+        {
+            "type": "start",
+            "user": "Narrator",
+            "dialogue": "Per iniziare l'avventura, trova Casa Mi Chillo!"
+        },
+        {
+            "type": "mappa",
+            "user": "Narrator",
+            "dialogue": "Andiamo alla prossima zona!"
+        },
+        {
+            "type": "pregragussy",
+            "user": "Narrator",
+            "dialogue": "Uscito dal Bosco Pasketta, ti ritrovi in una vallata. Prosegui per il sentiero, finchè davanti a te non trovi un ostacolo! Andiamo a vedere cosa è... o meglio, chi è!"
+        },
+        {
+            "type": "postgragussy",
+            "user": "Narrator",
+            "dialogue": "Andiamo a vedere se sanno aiutarci con Gragussy!"
+        }
+    ]
+}
