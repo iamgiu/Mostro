@@ -15,6 +15,28 @@ var basketball = document.getElementById('basketball');
 var basketTop = document.getElementById('basketTop');
 var scoreElement = document.getElementById('score');
 
+/* Salon */
+var bottoneSalon = document.getElementById('bottoneSalon')
+var minigiocoBibik = document.getElementById('minigiocoBibik').addEventListener('click', startGame);
+var wrapper = document.querySelector('wrapper')
+
+const typingText = document.querySelector(".typing-text p"),
+      inpField = document.querySelector(".wrapper .input-field"),
+      tryAgainBtn = document.querySelector(".content button"),
+      timeTag = document.querySelector(".time span b"),
+      mistakeTag = document.querySelector(".mistake span"),
+      wpmTag = document.querySelector(".wpm span"),
+      cpmTag = document.querySelector(".cpm span");
+
+let timer,
+maxTime = 60,
+timeLeft = maxTime,
+charIndex = mistakes = isTyping = 0;
+
+const paragraphs = [
+    "Non pensi che qualcuno si possa offendendere leggendo i tuoi messaggi? Gli stai dando dell'incapace solo perchè non ha una singola arma. \n Solo per un misero 16%, che da quella staffa. A fronte delle cure di arcanisti che ad Elsweyr non c'erano.\nChi siamo noi per spegnere un entustiamo del genere?\nIo non tratto set, io tratto le mani delle persone.\nQuesta è la build del Sorcerer Magicka No Pet aggiornata ad Elsweyr da parte di @iTzCillo:\nRazza: Elfo Alto (Consigliata), Bretone (consigliata)\nMundus: The Shadow (Trials), The Lover (Dungeon & Maelstrom)\nCibo: Clockwork Citrus Filet / Witchmother’s Potent Brew, Double Bloody Mara\nPozioni: Essence of Spell Power (Corn Flower, Lady’s Smock, Water Hyachint)\nVampirismo: Obbligatorio, livello 2"
+];
+
 /* Score */
 var score;
 
@@ -35,6 +57,10 @@ function setAmbient(idAmbient) {
         setBasket('visible');
     }
 
+    if(idAmbient == 'Salon') {
+        setSalon('visible');
+    }
+
     previousAmbient = idAmbient;
 
     setMap('hidden');
@@ -48,6 +74,10 @@ function setBackAmbient() {
     backButton.style.visibility = 'hidden';
 
     if(previousAmbient == 'CampoBasket') {
+        setBasket('hidden');
+    }
+
+    if(previousAmbient == 'Salon') {
         setBasket('hidden');
     }
 
@@ -74,6 +104,91 @@ function setBasket(status) {
     basketBack.style.visibility = status;
     showScore();
     scoreElement.style.visibility = status;
+}
+
+function setSalon(status) {
+    minigiocoBibik.style.visibility = status;
+    startGame();
+}
+
+function startGame() {
+    document.querySelector(".start-button-container").style.display = "none";
+    document.querySelector(".wrapper").style.display = "block";
+    resetGame();
+    inpField.addEventListener("input", initTyping);
+    tryAgainBtn.addEventListener("click", resetGame);
+    loadParagraph();
+}
+
+function loadParagraph() {
+    const ranIndex = Math.floor(Math.random() * paragraphs.length);
+    typingText.innerHTML = "";
+    paragraphs[ranIndex].split("").forEach(char => {
+        let span = `<span>${char}</span>`;
+        typingText.innerHTML += span;
+    });
+    typingText.querySelectorAll("span")[0].classList.add("active");
+    document.addEventListener("keydown", () => inpField.focus());
+    typingText.addEventListener("click", () => inpField.focus());
+}
+
+function initTyping() {
+    const characters = typingText.querySelectorAll("span");
+    let typedChar = inpField.value.split("")[charIndex];
+
+    if (charIndex < characters.length - 1 && timeLeft > 0) {
+        if (!isTyping) {
+            timer = setInterval(initTimer, 1000);
+            isTyping = true;
+        }
+        if (typedChar == null) {
+            charIndex--;
+            if (characters[charIndex].classList.contains("incorrect")) {
+                mistakes--;
+            }
+            characters[charIndex].classList.remove("correct", "incorrect");
+        } else {
+            if (characters[charIndex].innerText === typedChar) {
+                characters[charIndex].classList.add("correct");
+            } else {
+                mistakes++;
+                characters[charIndex].classList.add("incorrect");
+            }
+            charIndex++;
+        }
+        characters.forEach(span => span.classList.remove("active"));
+        characters[charIndex].classList.add("active");
+
+        let wpm = Math.round(((charIndex - mistakes) / 5) / ((maxTime - timeLeft) / 60));
+        wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
+        wpmTag.innerText = wpm;
+        mistakeTag.innerText = mistakes;
+        cpmTag.innerText = charIndex - mistakes;
+    } else {
+        clearInterval(timer);
+        inpField.value = "";
+    }
+}
+
+function initTimer() {
+    if (timeLeft > 0) {
+        timeLeft--;
+        timeTag.innerText = timeLeft;
+    } else {
+        clearInterval(timer);
+    }
+}
+
+function resetGame() {
+    loadParagraph();
+    inpField.value = "";
+    clearInterval(timer);
+    timeLeft = maxTime;
+    charIndex = mistakes = isTyping = 0;
+    timeTag.innerText = timeLeft;
+    mistakeTag.innerText = mistakes;
+    wpmTag.innerText = 0;
+    cpmTag.innerText = 0;
 }
 
 /* Gestione score */
@@ -151,3 +266,6 @@ function changeIcon(icon) {
     var changeTo = "Immagini/Characters/" + icon + ".png";
     pgIcon.src = changeTo;
 }
+
+
+
