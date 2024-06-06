@@ -16,12 +16,14 @@ var basketTop = document.getElementById('basketTop');
 var scoreElement = document.getElementById('score');
 
 /* Salon */
-var bottoneSalon = document.getElementById('bottoneSalon')
-var minigiocoBibik = document.getElementById('minigiocoBibik').addEventListener('click', startGame);
-var wrapper = document.querySelector('wrapper')
+var bottoneSalon = document.getElementById('bottoneSalon');
+var minigiocoBibik = document.getElementById('minigiocoBibik');
+minigiocoBibik.addEventListener('click', startGame);
+var nextButton = document.getElementById('nextButton');
+var wrapper = document.getElementById('wrapper');
 
 const typingText = document.querySelector(".typing-text p"),
-      inpField = document.querySelector(".wrapper .input-field"),
+      inpField = document.querySelector(".input-field"),
       tryAgainBtn = document.querySelector(".content button"),
       timeTag = document.querySelector(".time span b"),
       mistakeTag = document.querySelector(".mistake span"),
@@ -34,17 +36,15 @@ timeLeft = maxTime,
 charIndex = mistakes = isTyping = 0;
 
 const paragraphs = [
-    "Non pensi che qualcuno si possa offendendere leggendo i tuoi messaggi? Gli stai dando dell'incapace solo perchè non ha una singola arma. \n Solo per un misero 16%, che da quella staffa. A fronte delle cure di arcanisti che ad Elsweyr non c'erano.\nChi siamo noi per spegnere un entustiamo del genere?\nIo non tratto set, io tratto le mani delle persone.\nQuesta è la build del Sorcerer Magicka No Pet aggiornata ad Elsweyr da parte di @iTzCillo:\nRazza: Elfo Alto (Consigliata), Bretone (consigliata)\nMundus: The Shadow (Trials), The Lover (Dungeon & Maelstrom)\nCibo: Clockwork Citrus Filet / Witchmother’s Potent Brew, Double Bloody Mara\nPozioni: Essence of Spell Power (Corn Flower, Lady’s Smock, Water Hyachint)\nVampirismo: Obbligatorio, livello 2"
+    "Non pensi che qualcuno si possa offendendere leggendo i tuoi messaggi? Gli stai dando dell'incapace solo perchè non ha una singola arma. ", 
+    "Solo per un misero 16%, che da quella staffa. A fronte delle cure di arcanisti che ad Elsweyr non c'erano.",
+    "Chi siamo noi per spegnere un entusiasmo del genere?",
+    "Io non tratto set, io tratto le mani delle persone.",
+    "Questa è la build del Sorcerer Magicka No Pet aggiornata ad Elsweyr da parte di @iTzCillo: Razza: Elfo Alto (Consigliata), Bretone (consigliata) Mundus: The Shadow (Trials), The Lover (Dungeon & Maelstrom) Cibo: Clockwork Citrus Filet / Witchmother’s Potent Brew, Double Bloody Mara Pozioni: Essence of Spell Power (Corn Flower, Lady’s Smock, Water Hyachint) Vampirismo: Obbligatorio, livello 2"
 ];
 
 /* Score */
 var score;
-
-/* Textbox */
-var textBox = document.getElementById('textBox');
-
-/* Icon */
-var pgIcon = document.getElementById('pgIcon');
 
 /* Imposta l'ambiente richiesto */
 function setAmbient(idAmbient) {
@@ -78,7 +78,8 @@ function setBackAmbient() {
     }
 
     if(previousAmbient == 'Salon') {
-        setBasket('hidden');
+        setSalon('hidden');
+        stopGame();
     }
 
     setMap('visible');
@@ -107,17 +108,23 @@ function setBasket(status) {
 }
 
 function setSalon(status) {
+    bottoneSalon.style.visibility = status;
     minigiocoBibik.style.visibility = status;
-    startGame();
 }
 
 function startGame() {
-    document.querySelector(".start-button-container").style.display = "none";
-    document.querySelector(".wrapper").style.display = "block";
+    wrapper.style.visibility = 'visible';
+    minigiocoBibik.style.visibility = 'hidden';
     resetGame();
     inpField.addEventListener("input", initTyping);
     tryAgainBtn.addEventListener("click", resetGame);
     loadParagraph();
+}
+
+function stopGame() {
+    wrapper.style.visibility = 'hidden';
+    if(bottoneSalon.style.visibility == 'visible')
+        minigiocoBibik.style.visibility = 'visible';
 }
 
 function loadParagraph() {
@@ -224,7 +231,6 @@ function setAnimation(animationValue, watchTime) {
 
 /* Lancio palla da basket */
 function shootBall() {
-    var ball = document.getElementById('basketball');
 
     //var randomAnimation = 2;
     var randomAnimation = Math.floor(Math.random() * 3); // Genera un numero casuale da 0 a 3
@@ -255,17 +261,3 @@ function shootBall() {
     }, 4500);
 
 }
-
-/* Modifica testo della box */
-function changeText(content) {
-    textBox.textContent = content;
-}
-
-/* Modifica icona */
-function changeIcon(icon) {
-    var changeTo = "Immagini/Characters/" + icon + ".png";
-    pgIcon.src = changeTo;
-}
-
-
-
