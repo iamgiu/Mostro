@@ -21,7 +21,7 @@
             <img class="interface" src="Immagini/Interface.png">
             
             <!-- Map icons -->
-            <a id="showHouse" onclick="setAmbient('House')">
+            <a id="showHouse" onclick="setAmbient('House'); startDialogue('House')">
                 <img class="imageOn" src="Immagini/Places/House.png">
                 <img class="imageOff" src="Immagini/Places/HouseSelected.png">
                 <span class="imageOff">Casa Cillo</span>
@@ -113,9 +113,8 @@
                 <img id="backButton" src="Immagini/BackButton.png" onclick="setBackAmbient()">
             </a>
 
-            <div id="textBox">
-                
-            </div>
+            <div id="textBox"></div>
+            <button id="nextButton" >Avanti</button>
             
         </div>
 
@@ -123,5 +122,5 @@
     </body>
 
     <script type="text/javascript" src="App/app_pagina_avventura.js"></script>
-
+    <script type="text/javascript" src="App/app_Frieren.js"></script>
 </html>
