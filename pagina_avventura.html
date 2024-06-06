@@ -11,7 +11,7 @@
     <body>
         <div class="content">
             <!-- Icon, map, ambients and interface -->
-            <img id="pgIcon" src="Immagini/Characters/Narrator.png">
+            <img id="pgIcon" src="Immagini/Characters/Narratore.png">
             <img id="map" src="Immagini/Ambients/Map.png">
 
             <img id="ambient">
@@ -76,10 +76,9 @@
             
             <!-- Items with interactions Salon-->
             <div id="bottoneSalon">
-                <button id="minigiocoBibik">MANEGGIA</button>
+                <button id="minigiocoBibik" onclick="startGame()">MANEGGIA</button>
             </div>
-            <div class="wrapper" style="display: none;">
-                <input type="text" class="input-field">
+            <div id="wrapper">
                 <div class="content-box">
                     <div class="typing-text">
                         <p></p>
@@ -103,8 +102,10 @@
                                 <span>0</span>
                             </li>
                         </ul>
-                        <button>Try Again</button>
+                        <button onclick="resetGame()">Riprova</button>
+                        <button onclick="stopGame()">Termina</button>
                     </div>
+                    <input type="text" class="input-field">
                 </div>
             </div>
             
@@ -113,9 +114,11 @@
                 <img id="backButton" src="Immagini/BackButton.png" onclick="setBackAmbient()">
             </a>
 
-            <div id="textBox"></div>
-            <button id="nextButton" >Avanti</button>
-            
+            <div id="textBox">
+                <span id="textP"></span>
+                <button id="nextButton">Avanti</button>
+            </div>
+
         </div>
 
         <p class="firma">By Bro's Company</p>
