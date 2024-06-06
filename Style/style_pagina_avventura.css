@@ -177,7 +177,6 @@ body {
   opacity: 0;
   z-index: -999;
   position: absolute;
-  visibility: hidden;
 }
 .content-box{
   padding: 13px 20px 0;

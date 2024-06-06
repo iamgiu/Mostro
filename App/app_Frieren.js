@@ -1,17 +1,3 @@
-const xhttp = new XMLHttpRequest();
-
-function getDialogue(dialogue) {
-    xhttp.open("GET", "../Dialoghi/" + dialogue + ".json");
-    xhttp.send();
-    // Define a callback function
-    xhttp.onload = function() { 
-        console.log(xhttp.responseXML);    
-    }
-}
-
-getDialogue("narratore");
-
-/*
 const dialoguesHouse = [
     {
         character: "Narratore",
@@ -74,7 +60,6 @@ const dialoguesHouse = [
         text: "Che il vento sia alle tue spalle e la fortuna ti sorrida, viandante. Il Monte Mostro ti attende e, con esso, il tuo destino. Buon viaggio."
     }
 ];
-*/
 
 let currentDialogueIndex = 0;
 
