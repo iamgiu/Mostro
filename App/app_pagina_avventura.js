@@ -107,11 +107,13 @@ function setBasket(status) {
     scoreElement.style.visibility = status;
 }
 
+/* Imposta lo stato del Salon (visibile/invisibile) */
 function setSalon(status) {
     bottoneSalon.style.visibility = status;
     minigiocoBibik.style.visibility = status;
 }
 
+/* Minigioco Salon */
 function startGame() {
     wrapper.style.visibility = 'visible';
     minigiocoBibik.style.visibility = 'hidden';
