@@ -15,10 +15,6 @@ var basketball = document.getElementById('basketball');
 var basketTop = document.getElementById('basketTop');
 var scoreElement = document.getElementById('score');
 
-/* Shooter */
-var shooterCans = ['can1', 'can2', 'can3', 'can4', 'can5', 'can6'];
-var shooterHand = document.getElementById('hand');
-
 /* Score */
 var score;
 
@@ -39,11 +35,6 @@ function setAmbient(idAmbient) {
         setBasket('visible');
     }
 
-    if(idAmbient == 'Salon') {
-        setScore();
-        setShooter('visible');
-    }
-
     previousAmbient = idAmbient;
 
     setMap('hidden');
@@ -58,10 +49,6 @@ function setBackAmbient() {
 
     if(previousAmbient == 'CampoBasket') {
         setBasket('hidden');
-    }
-
-    if(previousAmbient == 'Salon') {
-        setShooter('hidden');
     }
 
     setMap('visible');
@@ -85,17 +72,6 @@ function setBasket(status) {
     basketTop.style.visibility = status;
     basketball.style.visibility = status;
     basketBack.style.visibility = status;
-    showScore();
-    scoreElement.style.visibility = status;
-}
-
-/* Imposta lo stato dello shooter (visibile/invisibile) */
-function setShooter(status) {
-    for (let i = 0; i < shooterCans.length; i++) {
-        current = document.getElementById(shooterCans[i]);
-        current.style.visibility = status;
-    }
-    shooterHand.style.visibility = status;
     showScore();
     scoreElement.style.visibility = status;
 }
