@@ -20,45 +20,50 @@ function displayDialogue(dialogue) {
     changeIcon(dialogue.character);
 }
 
-function startDialogue(place) {
+let currentIndexes = {
+    House: 0,
+    LagoNia: 0,
+    BoscoPasketta: 0
+  };
+  
+  function startDialogue(place) {
     let dialogues;
-    let currentIndex = 0;
-
-    if (place == 'House') {
-        dialogues = dialoguesHouse;
-    } else if (place == 'LagoNia') {
-        dialogues = dialoguesLagoNia;
-    } else if (place == 'BoscoPasketta') {
-        dialogues = dialoguesBoscoPasketta;
-
+  
+    if (place === 'House') {
+      dialogues = dialoguesHouse;
+    } else if (place === 'LagoNia') {
+      dialogues = dialoguesLagoNia;
+    } else if (place === 'BoscoPasketta') {
+      dialogues = dialoguesBoscoPasketta;
     }
-
+  
     if (dialogues) {
-        nextButton.disabled = false;
-        nextButton.innerText = "Avanti";
-        displayDialogue(dialogues[currentIndex]);
-
-        // Rimuovi eventuali listener precedenti
-        nextButton.removeEventListener("click", nextDialogue);
-
-        // Aggiungi un nuovo listener
-        nextButton.addEventListener("click", function() {
-            return function() {
-                nextDialogue(dialogues, currentIndex);
-                    currentIndex++; // Incrementa l'indice qui
-            };
-        }());
+      nextButton.disabled = false;
+      nextButton.innerText = "Avanti";
+      displayDialogue(dialogues[currentIndexes[place]]);
+  
+      // Rimuovi eventuali listener precedenti
+      nextButton.removeEventListener("click", handleNextButtonClick);
+  
+      // Definisci la funzione del listener qui per poterla rimuovere
+      function handleNextButtonClick() {
+        nextDialogue(dialogues, place);
+      }
+  
+      // Aggiungi il listener
+      nextButton.addEventListener("click", handleNextButtonClick);
     }
-}
-
-function nextDialogue(dialogues, currentIndex) {
-    if (currentIndex < dialogues.length) {
-        displayDialogue(dialogues[currentIndex]);
+  }
+  
+  function nextDialogue(dialogues, place) {
+    currentIndexes[place]++; // Incrementa l'indice qui
+    if (currentIndexes[place] < dialogues.length) {
+      displayDialogue(dialogues[currentIndexes[place]]);
     } else {
-        nextButton.disabled = true;
-        nextButton.innerText = "Fine";
+      nextButton.disabled = true;
+      nextButton.innerText = "Fine";
     }
-}
+  }
 
 /*function startDialogue(place) {
     if (place === 'House') {
