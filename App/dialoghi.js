@@ -4,14 +4,14 @@ const dialoguesStart = [
         character: "Narratore",
         text: "Per iniziare l'avventura, trova Casa Mi Chillo!"
     }
-]
+];
 
 const dialoguesMap = [
     {
         character: "Narratore",
         text: "Andiamo alla prossima zona!"
     }
-]
+];
 
 /* Dialoghi Casa Mi Chillo */
 const dialoguesHouse = [

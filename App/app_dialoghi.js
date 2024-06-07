@@ -133,8 +133,6 @@ function endDialogue() {
     case '':
       break;
   }
-
-  
 }
 
 function handleNext() {
