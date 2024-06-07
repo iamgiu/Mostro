@@ -1,5 +1,20 @@
+/* Narratore start */
+const dialoguesStart = [
+    {
+        character: "Narratore",
+        text: "Per iniziare l'avventura, trova Casa Mi Chillo!"
+    }
+]
+
+const dialoguesMap = [
+    {
+        character: "Narratore",
+        text: "Andiamo alla prossima zona!"
+    }
+]
+
 /* Dialoghi Casa Mi Chillo */
-var dialoguesHouse = [
+const dialoguesHouse = [
     {
         character: "Narratore",
         text: "Nel chiarore fioco dell'alba, ti sveglia lentamente dal suo sonno profondo, la mente annebbiata da un torpore che si dissolve gradualmente. Le palpebre pesanti si aprono con fatica, rivelando una stanza avvolta nell'oscurità. Il suono leggero del vento che sussurra tra le fessure delle finestre crea un'atmosfera silenziosa e misteriosa, mentre la figura di un'elfa immortale giace vicino al fuoco che arde fioco nell'angolo della stanza."
@@ -63,7 +78,7 @@ var dialoguesHouse = [
 ];
 
 /* Dialoghi LagoNia */
-var dialoguesLagoNia = [
+const dialoguesLagoNia = [
     {
         character: "Narratore",
         text: "Il Lago Nia si staglia davanti a te come un'enorme distesa d'acqua scura, riflettendo il cielo cupo e minaccioso sopra di esso. Le sue acque sembrano muoversi con una lentezza inquietante, quasi come se fossero vive. Il vento sibila tra gli alberi circostanti, portando con sé un senso di mistero e pericolo. Ti fermi sulla riva, guardando in modo frustrato il lago apparentemente insormontabile e sospirando."
@@ -153,10 +168,14 @@ const dialoguesLagoNiaLose = [
 ];
 
 /* Dialoghi Bosco Pasketta */
-var dialoguesBoscoPasketta = [
+const dialoguesBoscoPasketta = [
     {
         character: "Narratore",
-        text: "Dopo aver attraversato il Lago Nia, ti addentri in un bosco avvolto da un'atmosfera misteriosa. Gli alberi, alti e possenti, si ergono come guardiani silenziosi, con rami che si intrecciano formando strane forme a tridente. Il suolo è coperto da un tappeto di foglie secche, e il chiarore del sole che filtra attraverso le fronde crea giochi di luce e ombra, conferendo al luogo un'aria magica e inquietante allo stesso tempo. È in questo scenario che si imbatte in una figura solitaria, una giovane donna con un'aura di tristezza che la circonda."
+        text: "Dopo aver attraversato il Lago Nia, ti addentri in un bosco avvolto da un'atmosfera misteriosa. Gli alberi, alti e possenti, si ergono come guardiani silenziosi, con rami che si intrecciano formando strane forme a tridente."
+    },
+    {
+        character: "Narratore",
+        text: "Il suolo è coperto da un tappeto di foglie secche, e il chiarore del sole che filtra attraverso le fronde crea giochi di luce e ombra, conferendo al luogo un'aria magica e inquietante allo stesso tempo. È in questo scenario che si imbatte in una figura solitaria, una giovane donna con un'aura di tristezza che la circonda."
     },
     {
         character: "Utahime",
@@ -180,8 +199,13 @@ var dialoguesBoscoPasketta = [
     },
     {
         character: "Pasketta",
-        text: "Ascolta, viandante, e presta attenzione, Se vuoi soccorrere Utahime, una prova è in azione. Il Puzzle del Tridente ti sfiderà, E solo risolvendolo la salvezza arriverà. Ma sappi, o coraggioso, che il tempo è tiranno, Entro il sorgere della luna piena, il tuo compito è sovrano. Se fallisci nel tuo intento, se il Puzzle non è risolto, Il male ancestrale si librerà, e il mondo soffrirà. Così affronta la sfida, con coraggio e sapienza, E salva Utahime, sconfiggendo l'oscurità con coerenza. Il destino del bosco nelle tue mani è fuggito, Ora, viandante, affronta il tuo mito."
+        text: "Ascolta, viandante, e presta attenzione, Se vuoi soccorrere Utahime, una prova è in azione. Il Puzzle del Tridente ti sfiderà, E solo risolvendolo la salvezza arriverà. Ma sappi, o coraggioso, che il tempo è tiranno, Entro il sorgere della luna piena, il tuo compito è sovrano. Se fallisci nel tuo intento, se il Puzzle non è risolto, Il male ancestrale si librerà, e il mondo soffrirà."
+    },
+    {
+        character: "Pasketta",
+        text: "Così affronta la sfida, con coraggio e sapienza, E salva Utahime, sconfiggendo l'oscurità con coerenza. Il destino del bosco nelle tue mani è fuggito, Ora, viandante, affronta il tuo mito."
     }
+
 ];
 
 const dialoguesBoscoPaskettaWin = [
@@ -223,7 +247,19 @@ const dialoguesBoscoPaskettaLose = [
 
 
 /* Dialogo Campo Basket */
+const dialoguesCampoBasket = [
+    {
+        character: "Narratore",
+        text: "Puzzo"
+    }
+];
 
+const dialoguesCampoBasketWin = [
+    {
+        character: "Narratore",
+        text: "Puzzo, ma di più"
+    }
+];
 
 /* Dialogo Gragussy 2 */
 
@@ -232,3 +268,7 @@ const dialoguesBoscoPaskettaLose = [
 
 
 /* Dialogo Monte Mostro */
+
+
+
+startDialogue("Start");

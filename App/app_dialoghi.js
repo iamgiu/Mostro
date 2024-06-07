@@ -21,107 +21,93 @@ function displayDialogue(dialogue) {
 }
 
 let currentIndexes = {
-    House: 0,
-    LagoNia: 0,
-    BoscoPasketta: 0
-  };
+  "Start": 0,
+  "Map": 0,
+  "House": 0,
+  "LagoNia": 0,
+  "BoscoPasketta": 0,
+  "CampoBasket": 0,
+  "CampoBasketWin": 0
+};
+
+let dialogues;
+let place;
   
-  function startDialogue(place) {
-    let dialogues;
-  
-    if (place === 'House') {
+function startDialogue(placeDialogue) {
+  place = placeDialogue;
+
+  switch(place) {
+    case 'Start':
+      dialogues = dialoguesStart;
+      displayDialogue(dialogues[currentIndexes[place]]);
+      return;
+    case 'Map':
+      dialogues = dialoguesMap;
+      displayDialogue(dialogues[currentIndexes[place]]);
+      nextButton.style.visibility = "hidden";
+      return;
+    case 'House':    
       dialogues = dialoguesHouse;
-    } else if (place === 'LagoNia') {
+      break;
+    case 'LagoNia':
       dialogues = dialoguesLagoNia;
-    } else if (place === 'BoscoPasketta') {
+      break;
+    case 'BoscoPasketta':
       dialogues = dialoguesBoscoPasketta;
-    }
-  
-    if (dialogues) {
-      nextButton.disabled = false;
-      nextButton.innerText = "Avanti";
-      displayDialogue(dialogues[currentIndexes[place]]);
-  
-      // Rimuovi eventuali listener precedenti
-      nextButton.removeEventListener("click", handleNextButtonClick);
-  
-      // Definisci la funzione del listener qui per poterla rimuovere
-      function handleNextButtonClick() {
-        nextDialogue(dialogues, place);
-      }
-  
-      // Aggiungi il listener
-      nextButton.addEventListener("click", handleNextButtonClick);
-    }
+      break;
+    case 'CampoBasket':
+      dialogues = dialoguesCampoBasket;
+      break;
+    case 'CampoBasketWin':
+      dialogues = dialoguesCampoBasketWin;
+      break;
   }
   
-  function nextDialogue(dialogues, place) {
-    currentIndexes[place]++; // Incrementa l'indice qui
-    if (currentIndexes[place] < dialogues.length) {
-      displayDialogue(dialogues[currentIndexes[place]]);
-    } else {
-      nextButton.disabled = true;
-      nextButton.innerText = "Fine";
+  if (dialogues && currentIndexes[place] < dialogues.length) {
+    nextButton.style.visibility = "visible";
+    if(dialogues.length == 1)
+      setNextButton("Fine");
+    else 
+      setNextButton("Avanti");
+    displayDialogue(dialogues[currentIndexes[place]]);
+  }
+}
+
+function endDialogue() {
+  changeText("");
+  changeIcon("Narratore");
+
+  if(place == "CampoBasket") {
+    if(currentIndexes[place] == dialogues.length) {
+      setScore();
+      showScore();
+      scoreElement.style.visibility = 'visible';
+      basketball.style.visibility = 'visible';
     }
   }
+}
 
-/*function startDialogue(place) {
-    if (place === 'House') {
-        currentDialogueIndex = 0;
-        nextButton.disabled = false;
-        nextButton.innerText = "Avanti";
-        displayDialogue(dialoguesHouse[currentDialogueIndex]);
+function handleNext() {
+  nextDialogue(dialogues, place);
+}
 
-        nextButton.addEventListener("click", () => {
-            const dialogues = dialoguesHouse;
-            if (currentDialogueIndex < dialogues.length - 1) {
-                currentDialogueIndex++;
-                displayDialogue(dialogues[currentDialogueIndex]);
-            } else {
-                nextButton.disabled = true;
-                nextButton.innerText = "Fine";
-            }
-        });
-    }
+function setNextButton(msg) {
+  nextButton.innerText = msg;
+}
 
-    if (place === 'LagoNia') {
-        currentDialogueIndex = 0;
-        nextButton.disabled = false;
-        nextButton.innerText = "Avanti";
-        displayDialogue(dialoguesLagoNia[currentDialogueIndex]);
+function nextDialogue(dialogues, place) {
+  currentIndexes[place]++; // Incrementa l'indice qui
+  if (currentIndexes[place] < dialogues.length) {
+    displayDialogue(dialogues[currentIndexes[place]]);
+  }
 
-        nextButton.addEventListener("click", () => {
-            const dialogues = dialoguesLagoNia;
-            if (currentDialogueIndex < dialogues.length - 1) {
-                currentDialogueIndex++;
-                displayDialogue(dialogues[currentDialogueIndex]);
-            } else {
-                nextButton.disabled = true;
-                nextButton.innerText = "Fine";
-            }
-        });
+  if(nextButton.innerHTML === "Fine") {
+    nextButton.style.visibility = "hidden";
+    endDialogue();
+  }
 
-        const LagoNiaWin = dialoguesLagoNiaWin;
-        const LagoNiaLose = dialoguesLagoNiaLose;
+  if (currentIndexes[place] == dialogues.length - 1) {
+    setNextButton("Fine");
+  }
 
-        
-    }
-
-    if (place === 'BoscoPasketta') {
-        currentDialogueIndex = 0;
-        nextButton.disabled = false;
-        nextButton.innerText = "Avanti";
-        displayDialogue(dialoguesLagoNia[currentDialogueIndex]);
-
-        nextButton.addEventListener("click", () => {
-            const dialogues = dialoguesBoscoPasketta;
-            if (currentDialogueIndex < dialogues.length - 1) {
-                currentDialogueIndex++;
-                displayDialogue(dialogues[currentDialogueIndex]);
-            } else {
-                nextButton.disabled = true;
-                nextButton.innerText = "Fine";
-            }
-        });
-    }
-} */
+}

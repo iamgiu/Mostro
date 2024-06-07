@@ -369,4 +369,5 @@ li:not(:first-child) span{
   position: absolute;
   right: 10px;
   bottom: 10px;
+  visibility: hidden;
 }

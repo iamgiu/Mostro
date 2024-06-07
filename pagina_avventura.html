@@ -21,13 +21,13 @@
             <img class="interface" src="Immagini/Interface.png">
             
             <!-- Map icons -->
-            <a id="showHouse" onclick="setAmbient('House'); startDialogue('House')">
+            <a id="showHouse" onclick="setAmbient('House')">
                 <img class="imageOn" src="Immagini/Places/House.png">
                 <img class="imageOff" src="Immagini/Places/HouseSelected.png">
                 <span class="imageOff">Casa Cillo</span>
             </a>
             
-            <a id="showLagoNia" onclick="setAmbient('LagoNia'); startDialogue('LagoNia')">
+            <a id="showLagoNia" onclick="setAmbient('LagoNia')">
                 <img class="imageOn" src="Immagini/Places/LagoNia.png">
                 <img class="imageOff" src="Immagini/Places/LagoNiaSelected.png">
                 <span class="imageOff">Lago Nia</span>
@@ -45,7 +45,7 @@
                 <span class="imageOff">Gragussy</span>
             </a>
 
-            <a id="showCampoBasket" onclick="setAmbient('CampoBasket'); startDialogue('CampoBasket')">
+            <a id="showCampoBasket" onclick="setAmbient('CampoBasket')">
                 <img class="imageOn" src="Immagini/Places/CampoBasket.png">
                 <img class="imageOff" src="Immagini/Places/CampoBasketSelected.png">
                 <span class="imageOff">Campo da Basket</span>
@@ -117,7 +117,7 @@
 
             <div id="textBox">
                 <span id="textP"></span>
-                <button id="nextButton">Avanti</button>
+                <button id="nextButton" onclick="handleNext()">Avanti</button>
             </div>
         </div>
 
