@@ -1,5 +1,3 @@
-let currentDialogueIndex = 0;
-
 /* Textbox */
 var textBox = document.getElementById('textP');
 
@@ -24,36 +22,41 @@ function displayDialogue(dialogue) {
 
 function startDialogue(place) {
     let dialogues;
+    let currentIndex = 0;
 
-    if (place === 'House') {
+    if (place == 'House') {
         dialogues = dialoguesHouse;
-    } else if (place === 'LagoNia') {
+    } else if (place == 'LagoNia') {
         dialogues = dialoguesLagoNia;
-    } else if (place === 'BoscoPasketta') {
+    } else if (place == 'BoscoPasketta') {
         dialogues = dialoguesBoscoPasketta;
+
     }
 
     if (dialogues) {
-        currentDialogueIndex = 0;
         nextButton.disabled = false;
         nextButton.innerText = "Avanti";
-        displayDialogue(dialogues[currentDialogueIndex]);
+        displayDialogue(dialogues[currentIndex]);
 
         // Rimuovi eventuali listener precedenti
         nextButton.removeEventListener("click", nextDialogue);
 
         // Aggiungi un nuovo listener
-        nextButton.addEventListener("click", nextDialogue.bind(null, dialogues));
+        nextButton.addEventListener("click", function() {
+            return function() {
+                nextDialogue(dialogues, currentIndex);
+                    currentIndex++; // Incrementa l'indice qui
+            };
+        }());
+    }
+}
 
-        function nextDialogue() {
-            if (currentDialogueIndex < dialogues.length - 1) {
-                currentDialogueIndex++;
-                displayDialogue(dialogues[currentDialogueIndex]);
-            } else {
-                nextButton.disabled = true;
-                nextButton.innerText = "Fine";
-            }
-        }
+function nextDialogue(dialogues, currentIndex) {
+    if (currentIndex < dialogues.length) {
+        displayDialogue(dialogues[currentIndex]);
+    } else {
+        nextButton.disabled = true;
+        nextButton.innerText = "Fine";
     }
 }
 
