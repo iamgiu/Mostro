@@ -1,4 +1,4 @@
-Narratore:  Dopo aver attraversato il Lago Nia, il nostro eroe si addentra in un bosco avvolto da un'atmosfera misteriosa. 
+Narratore:  Dopo aver attraversato il Lago Nia, ti addentri in un bosco avvolto da un'atmosfera misteriosa. 
             Gli alberi, alti e possenti, si ergono come guardiani silenziosi, con rami che si intrecciano formando strane forme a tridente. 
             Il suolo è coperto da un tappeto di foglie secche, e il chiarore del sole che filtra attraverso le fronde crea giochi di luce e ombra, 
             conferendo al luogo un'aria magica e inquietante allo stesso tempo. 
@@ -13,8 +13,8 @@ Utahime:    Ho... ho bisogno del tuo aiuto.
 
 Cillo:      Capisco. Anche io devo uscire da questo posto, ne usciremo insieme.
     
-Narratore:  Il giovane si avvicina, pronto ad ascoltare la richiesta di aiuto di Utahime. 
-            Tuttavia, prima che possa pronunciare una parola, il terreno inizia a tremare leggermente sotto i suoi piedi, e una voce risuona nell'aria, portando con sé un'eco di antica saggezza.
+Narratore:  Ti avvicini, pronto ad ascoltare la richiesta di aiuto di Utahime. 
+            Tuttavia, prima che possa pronunciare una parola, il terreno inizia a tremare leggermente sotto i tuoi piedi, e una voce risuona nell'aria, portando con sé un'eco di antica saggezza.
             E' l'antico protettore della foresta, Pasketta!
 
 Pasketta:   Ascolta, viandante, e presta attenzione,
@@ -59,8 +59,8 @@ Cillo:      Non c'è di che.
 Utahime:    Segreto, in bocca al lupo per la tua missione.
   
 Narratore:  Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare ulteriori spiegazioni, scompare tra gli alberi, fondendosi con l'ombra del bosco misterioso. 
-            Seppur perplesso per il mistero che avvolge il mondo, Cillo si concentra sul compito che lo attende. 
-            Con uno sguardo deciso verso l'orizzonte, continua il suo cammino attraverso il bosco incantato.
+            Seppur perplesso per il mistero che avvolge il mondo, ti concentri sul compito che lo attende. 
+            Con uno sguardo deciso verso l'orizzonte, continui il suo cammino attraverso il bosco incantato.
             La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde.
 
 # CASO DI PERDITA
