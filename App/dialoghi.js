@@ -211,7 +211,11 @@ const dialoguesBoscoPasketta = [
 const dialoguesBoscoPaskettaWin = [
     {
         character: "Pasketta",
-        text: "Oh viandante valoroso, con gioia ti accolgo, Nel Puzzle del Tridente la vittoria hai colto. Con ingegno e saggezza hai risolto il mistero, E Utahime ora dall'oscurità è libera e senza pensiero. Il male ancestrale respinto è stato, Grazie alla tua mente e al coraggio sognato. La foresta ora festeggia la tua vittoria, E il suo destino è illuminato nella gloria. Che la tua luce risplenda sempre in questa terra, E il tuo nome sia ricordato con gioia sincera. Ora, viandante, continua il tuo cammino con fierezza, E che il bene ti accompagni tramite risolutezza."
+        text: "Oh viandante valoroso, con gioia ti accolgo, Nel Puzzle del Tridente la vittoria hai colto. Con ingegno e saggezza hai risolto il mistero, E Utahime ora dall'oscurità è libera e senza pensiero. Il male ancestrale respinto è stato, Grazie alla tua mente e al coraggio sognato."
+    },
+    {
+        character: "Pasketta",
+        text:  "La foresta ora festeggia la tua vittoria, E il suo destino è illuminato nella gloria. Che la tua luce risplenda sempre in questa terra, E il tuo nome sia ricordato con gioia sincera. Ora, viandante, continua il tuo cammino con fierezza, E che il bene ti accompagni tramite risolutezza."
     },
     {
         character: "Utahime",
@@ -227,7 +231,11 @@ const dialoguesBoscoPaskettaWin = [
     },
     {
         character: "Narratore",
-        text: "Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare ulteriori spiegazioni, scompare tra gli alberi, fondendosi con l'ombra del bosco misterioso. Seppur perplesso per il mistero che avvolge il mondo, ti concentri sul compito che lo attende. Con uno sguardo deciso verso l'orizzonte, continui il suo cammino attraverso il bosco incantato. La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde."
+        text: "Utahime si volta, un enigmatico sorriso sulle labbra, e senza dare ulteriori spiegazioni, scompare tra gli alberi, fondendosi con l'ombra del bosco misterioso. Seppur perplesso per il mistero che avvolge il mondo, ti concentri sul compito che lo attende."
+    },
+    {
+        character: "Narratore",
+        text: "Con uno sguardo deciso verso l'orizzonte, continui il suo cammino attraverso il bosco incantato. La luce del sole filtra tra i rami degli alberi a forma di tridente, creando un'atmosfera magica e suggestiva, mentre il vento sussurra segreti millenari tra le fronde."
     }
 
 ];
@@ -268,7 +276,3 @@ const dialoguesCampoBasketWin = [
 
 
 /* Dialogo Monte Mostro */
-
-
-
-startDialogue("Start");

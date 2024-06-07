@@ -9,6 +9,9 @@ var ambient = document.getElementById('ambient');
 var previousAmbient = "";
 var animation = document.getElementById('animation');
 
+/* Tris Bosco Pasketta */
+var tris = document.getElementById('tris');
+
 /* Basket */
 var basketBack = document.getElementById('basketBack');
 var basketball = document.getElementById('basketball');
@@ -72,8 +75,14 @@ function setBackAmbient() {
     ambient.src = "";
     backButton.style.visibility = 'hidden';
 
+    if(previousAmbient == 'BoscoPasketta') {
+        setBosco('hidden');
+    }
+
     if(previousAmbient == 'CampoBasket') {
         setBasket('hidden');
+        setBasketball('hidden');
+        scoreElement.style.visibility = 'hidden';
     }
 
     if(previousAmbient == 'Salon') {
@@ -97,6 +106,10 @@ function setMap(status) {
         current = document.getElementById(mapElements[i]);
         current.style.visibility = status;
     }
+}
+
+function setBosco(status) {
+    tris.style.visibility = status;
 }
 
 /* Imposta lo stato del basket (visibile/invisibile) */

@@ -22,59 +22,45 @@
             
             <!-- Map icons -->
             <a id="showHouse" onclick="setAmbient('House')">
-                <img class="imageOn" src="Immagini/Places/House.png">
-                <img class="imageOff" src="Immagini/Places/HouseSelected.png">
+                <img class="imageOn" src="Immagini/Places/House.png"> 
+                <img class="imageOff" src="Immagini/Places/HouseSelected.png"> 
                 <span class="imageOff">Casa Cillo</span>
             </a>
             
-            <a id="showLagoNia" onclick="setAmbient('LagoNia')">
-                <img class="imageOn" src="Immagini/Places/LagoNia.png">
-                <img class="imageOff" src="Immagini/Places/LagoNiaSelected.png">
-                <span class="imageOff">Lago Nia</span>
+            <a id="showLagoNia">
+                <img class="imageUnavailable" src="Immagini/Places/LagoNiaUnavailable.png">
             </a>
 
-            <a id="showBoscoPasketta" onclick="setAmbient('BoscoPasketta'); startDialogue('BoscoPasketta')">
-                <img class="imageOn" src="Immagini/Places/BoscoPasketta.png">
-                <img class="imageOff" src="Immagini/Places/BoscoPaskettaSelected.png">
-                <span class="imageOff">Bosco Pasketta</span>
+            <a id="showBoscoPasketta" onclick="setAmbient('BoscoPasketta')">
+                <img class="imageUnavailable" src="Immagini/Places/BoscoPaskettaUnavailable.png">
             </a>
 
-            <a id="showGragussySleeping" onclick="setAmbient('GragussySleeping'); startDialogue('GragussySleeping')">
-                <img class="imageOn" src="Immagini/Places/GragussySleeping.png">
-                <img class="imageOff" src="Immagini/Places/GragussySleepingSelected.png">
-                <span class="imageOff">Gragussy</span>
+            <a id="showGragussySleeping" onclick="setAmbient('GragussySleeping')">
+                <img class="imageUnavailable" src="Immagini/Places/GragussySleepingUnavailable.png">
             </a>
 
             <a id="showCampoBasket" onclick="setAmbient('CampoBasket')">
-                <img class="imageOn" src="Immagini/Places/CampoBasket.png">
-                <img class="imageOff" src="Immagini/Places/CampoBasketSelected.png">
-                <span class="imageOff">Campo da Basket</span>
+                <img class="imageUnavailable" src="Immagini/Places/CampoBasketUnavailable.png">
             </a>
 
-            <a id="showNegozioScarpe" onclick="setAmbient('NegozioScarpe'); startDialogue('NegozioScarpe')">
-                <img class="imageOn" src="Immagini/Places/NegozioScarpe.png">
-                <img class="imageOff" src="Immagini/Places/NegozioScarpeSelected.png">
-                <span class="imageOff">Negozio di Shuba</span>
+            <a id="showNegozioScarpe" onclick="setAmbient('NegozioScarpe')">
+                <img class="imageUnavailable" src="Immagini/Places/NegozioScarpeUnavailable.png">
             </a>
 
-            <a id="showSalon" onclick="setAmbient('Salon'); startDialogue('Salon')">
-                <img class="imageOn" src="Immagini/Places/Salon.png">
-                <img class="imageOff" src="Immagini/Places/SalonSelected.png">
-                <span class="imageOff">Salon</span>
+            <a id="showSalon" onclick="setAmbient('Salon')">
+                <img class="imageUnavailable" src="Immagini/Places/SalonUnavailable.png">
             </a>
 
-            <a id="showMonteMostro" onclick="setAmbient('MonteMostro'), startDialogue('MonteMostro')">
-                <img class="imageOn" src="Immagini/Places/MonteMostro.png">
-                <img class="imageOff" src="Immagini/Places/MonteMostroSelected.png">
-                <span class="imageOff">Monte Mostro</span>
+            <a id="showMonteMostro" onclick="setAmbient('MonteMostro')">
+                <img class="imageUnavailable" src="Immagini/Places/MonteMostroUnavailable.png">
             </a>
 
-            <!-- Items with interactions -->
+            <!-- Items with interactions Basket -->
             <img id="basketBack" src="Immagini/Basket/BasketBack.png">
             <img id="basketball" src="Immagini/Basket/Basketball.png" onclick="shootBall()">
             <img id="basketTop" src="Immagini/Basket/BasketTop.png">
             
-            <!-- Items with interactions Salon-->
+            <!-- Items with interactions Salon -->
             <div id="bottoneSalon">
                 <button id="minigiocoBibik" onclick="startGame()">MANEGGIA</button>
             </div>
@@ -110,6 +96,26 @@
                 <input type="text" class="input-field">
             </div>
             
+            <div id="tris">
+                <table id="trisTable">
+                    <tr>
+                    <td onclick="mossa(0, 0)"></td>
+                    <td onclick="mossa(0, 1)"></td>
+                    <td onclick="mossa(0, 2)"></td>
+                    </tr>
+                    <tr>
+                    <td onclick="mossa(1, 0)"></td>
+                    <td onclick="mossa(1, 1)"></td>
+                    <td onclick="mossa(1, 2)"></td>
+                    </tr>
+                    <tr>
+                    <td onclick="mossa(2, 0)"></td>
+                    <td onclick="mossa(2, 1)"></td>
+                    <td onclick="mossa(2, 2)"></td>
+                    </tr>
+                </table>
+            </div>
+            
             <!-- Buttons -->
             <a id="showBackButton">
                 <img id="backButton" src="Immagini/BackButton.png" onclick="setBackAmbient()">
@@ -125,6 +131,7 @@
     </body>
 
     <script type="text/javascript" src="App/app_pagina_avventura.js"></script>
-    <script type="text/javascript" src="App/app_dialoghi.js"></script>
     <script type="text/javascript" src="App/dialoghi.js"></script>
+    <script type="text/javascript" src="App/app_dialoghi.js"></script>
+    <script type="text/javascript" src="App/app_tris.js"></script>
 </html>

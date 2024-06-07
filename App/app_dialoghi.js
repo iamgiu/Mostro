@@ -26,6 +26,8 @@ let currentIndexes = {
   "House": 0,
   "LagoNia": 0,
   "BoscoPasketta": 0,
+  "BoscoPaskettaWin": 0,
+  "BoscoPaskettaLose": 0,
   "CampoBasket": 0,
   "CampoBasketWin": 0
 };
@@ -55,6 +57,12 @@ function startDialogue(placeDialogue) {
     case 'BoscoPasketta':
       dialogues = dialoguesBoscoPasketta;
       break;
+    case 'BoscoPaskettaWin':
+      dialogues = dialoguesBoscoPaskettaWin;
+      break;
+    case 'BoscoPaskettaLose':
+      dialogues = dialoguesBoscoPaskettaLose;
+      break;
     case 'CampoBasket':
       dialogues = dialoguesCampoBasket;
       break;
@@ -73,18 +81,60 @@ function startDialogue(placeDialogue) {
   }
 }
 
+function setMapInnerHTML(n, scene, sceneText) {
+  document.getElementById(mapElements[n]).innerHTML = '<img class="imageOn" src="Immagini/Places/' + scene +'.png"><img class="imageOff" src="Immagini/Places/' + scene + 'Selected.png" onclick="setAmbient(\'' + scene + '\')"><span class="imageOff">' + sceneText + '</span>';
+}
+
 function endDialogue() {
   changeText("");
-  changeIcon("Narratore");
+  changeIcon("Cillo");
 
-  if(place == "CampoBasket") {
-    if(currentIndexes[place] == dialogues.length) {
-      setScore();
-      showScore();
-      scoreElement.style.visibility = 'visible';
-      basketball.style.visibility = 'visible';
-    }
+  switch(place) {
+    case 'House':
+      setMapInnerHTML(1, "LagoNia", "Lago Nia");
+      break;
+    case 'LagoNia':
+      setMapInnerHTML(2, "BoscoPasketta", "Bosco Pasketta");
+      break;
+    case 'BoscoPasketta':
+      if(currentIndexes[place] == dialogues.length) {
+        tris.style.visibility = 'visible';
+      }
+      break;
+    case 'BoscoPaskettaWin':
+      setMapInnerHTML(3, "GragussySleeping", "Gragussy Sleeping");
+      break;
+    case 'BoscoPaskettaLose':
+      if(currentIndexes[place] == dialogues.length) {
+        tris.style.visibility = 'visible';
+      }
+      break;
+    case 'NegozioScarpe':
+      setMapInnerHTML(4, "CampoBasket", "Campo Basket");
+      break;
+    case 'CampoBasket':
+      if(currentIndexes[place] == dialogues.length) {
+        setScore();
+        showScore();
+        scoreElement.style.visibility = 'visible';
+        basketball.style.visibility = 'visible';
+      }
+      break;
+    case 'CampoBasketWin':
+      setMapInnerHTML(5, "Salon", "Salon");
+      break;
+    case 'Salon':
+      break;
+    case 'SalonWin':
+      setMapInnerHTML(6, "MonteMostro", "Monte Mostro");
+      break;
+    case 'SalonLose':
+      break;
+    case '':
+      break;
   }
+
+  
 }
 
 function handleNext() {
@@ -111,3 +161,5 @@ function nextDialogue(dialogues, place) {
   }
 
 }
+
+startDialogue("Start");

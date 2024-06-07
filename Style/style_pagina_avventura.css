@@ -48,7 +48,6 @@ body {
     top: 15px;
 }
 
-
 .imageOff, 
 #showHouse:hover .imageOn, 
 #showLagoNia:hover .imageOn, 
@@ -370,4 +369,35 @@ li:not(:first-child) span{
   right: 10px;
   bottom: 10px;
   visibility: hidden;
+}
+
+/* Tris Bosco Pasketta */
+#tris {
+  position: absolute;
+  left: 490px;
+  top: 100px;
+  visibility: hidden;
+}
+
+#trisTable {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#trisTable td {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  font-size: 48px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: darkgreen;
+}
+
+#trisTable td:hover {
+  background-color: green;
+}
+
+#trisTable h1 {
+  text-align: center;
 }
