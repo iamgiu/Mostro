@@ -118,8 +118,8 @@ function setMapInnerHTML(n, scene, sceneText) {
 }
 
 function endDialogue() {
-  changeText("");
-  changeIcon("Cillo");
+  changeText("Cosa aspetti ad andare avanti?");
+  changeIcon("Narratore");
 
   switch(place) {
     case 'House':
