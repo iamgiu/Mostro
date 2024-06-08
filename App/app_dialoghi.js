@@ -105,7 +105,7 @@ function startDialogue(placeDialogue) {
   
   if (dialogues && currentIndexes[place] < dialogues.length) {
     nextButton.style.visibility = "visible";
-    if(dialogues.length == 1)
+    if(dialogues.length == currentIndexes[place]+1)
       setNextButton("Fine");
     else 
       setNextButton("Avanti");
@@ -140,6 +140,7 @@ function endDialogue() {
       if(currentIndexes[place] == dialogues.length) {
         tris.style.visibility = 'visible';
       }
+      currentIndexes[place] = 0;
       break;
     case 'GragussySleeping':
       setMapInnerHTML(4, "NegozioScarpe", "Negozio di Shuba");
@@ -165,6 +166,7 @@ function endDialogue() {
     case 'Salon':
       if(currentIndexes[place] == dialogues.length) {
         bottoneSalon.style.visibility = 'visible';
+        minigiocoBibik.style.visibility = 'visible';
       }
       break;
     case 'SalonWin':

@@ -59,10 +59,6 @@ function setAmbient(idAmbient) {
         setBasket('visible');
     }
 
-    if(idAmbient == 'Salon') {
-        setSalon('visible');
-    }
-
     previousAmbient = idAmbient;
     setMap('hidden');
     startDialogue(idAmbient);
@@ -257,16 +253,16 @@ function shootBall() {
     switch (randomAnimation) {
         case 0:
             // Animazione 1: Canestro
-            setAnimation("Basket/Canestro", 4000);
+            setAnimation("Basket/Canestro", 3600);
             addScore();
             break;
         case 1:
             // Animazione 2: Canestro verso sinistra
-            setAnimation("Basket/MissCanestroSX", 3300);
+            setAnimation("Basket/MissCanestroSX", 2600);
             break;
         case 2:
             // Animazione 3: Canestro verso destra
-            setAnimation("Basket/MissCanestroDX", 3300);
+            setAnimation("Basket/MissCanestroDX", 2600);
             break; 
         default:
             break;
