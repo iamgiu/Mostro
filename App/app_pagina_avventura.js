@@ -9,6 +9,9 @@ var ambient = document.getElementById('ambient');
 var previousAmbient = "";
 var animation = document.getElementById('animation');
 
+/* Tris Bosco Pasketta */
+var tris = document.getElementById('tris');
+
 /* Basket */
 var basketBack = document.getElementById('basketBack');
 var basketball = document.getElementById('basketball');
@@ -53,7 +56,6 @@ function setAmbient(idAmbient) {
     backButton.style.visibility = 'visible';
 
     if(idAmbient == 'CampoBasket') {
-        setScore();
         setBasket('visible');
     }
 
@@ -62,8 +64,8 @@ function setAmbient(idAmbient) {
     }
 
     previousAmbient = idAmbient;
-
     setMap('hidden');
+    startDialogue(idAmbient);
 
     console.log("Changed ambient to: " + changeTo);
 }
@@ -73,8 +75,14 @@ function setBackAmbient() {
     ambient.src = "";
     backButton.style.visibility = 'hidden';
 
+    if(previousAmbient == 'BoscoPasketta') {
+        setBosco('hidden');
+    }
+
     if(previousAmbient == 'CampoBasket') {
         setBasket('hidden');
+        setBasketball('hidden');
+        scoreElement.style.visibility = 'hidden';
     }
 
     if(previousAmbient == 'Salon') {
@@ -83,6 +91,8 @@ function setBackAmbient() {
     }
 
     setMap('visible');
+
+    startDialogue("Map");
 
     console.log("Reset ambient");
 }
@@ -98,13 +108,18 @@ function setMap(status) {
     }
 }
 
+function setBosco(status) {
+    tris.style.visibility = status;
+}
+
 /* Imposta lo stato del basket (visibile/invisibile) */
 function setBasket(status) {
     basketTop.style.visibility = status;
-    basketball.style.visibility = status;
     basketBack.style.visibility = status;
-    showScore();
-    scoreElement.style.visibility = status;
+}
+
+function setBasketball(status) {
+    basketball.style.visibility = status;
 }
 
 /* Imposta lo stato del Salon (visibile/invisibile) */
@@ -221,10 +236,12 @@ function setAnimation(animationValue, watchTime) {
     setTimeout(function() {
         animation.src = "";
         setBasket('visible');
+        setBasketball('visible');
         backButton.style.visibility = 'visible';
     }, watchTime);
 
     setBasket('hidden');
+    setBasketball('hidden');
     backButton.style.visibility = 'hidden';
     animation.src = animationSrc;
     
@@ -234,7 +251,7 @@ function setAnimation(animationValue, watchTime) {
 /* Lancio palla da basket */
 function shootBall() {
 
-    //var randomAnimation = 2;
+    //var randomAnimation = 0;
     var randomAnimation = Math.floor(Math.random() * 3); // Genera un numero casuale da 0 a 3
 
     switch (randomAnimation) {
@@ -258,7 +275,9 @@ function shootBall() {
     // Vittoria
     setTimeout (function() {
         if (score == 5) {
-            alert("Congratulazioni!");
+            startDialogue("CampoBasketWin");
+            setBasketball('hidden');
+            scoreElement.style.visibility = 'hidden';
         }
     }, 4500);
 
