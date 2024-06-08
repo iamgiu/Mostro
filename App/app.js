@@ -10,9 +10,12 @@ function updateCountdown() {
     const difference = birthday - currentDate;
 
     const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
+    const hoursLeft = Math.ceil((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minuteLeft = Math.ceil((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const secondLeft = Math.ceil((difference % (1000 * 60)) / 1000);
 
     // Aggiorna il testo del countdown
-    document.getElementById("countdown").textContent = `Giorni rimanenti: ${daysLeft}`;
+    document.getElementById("countdown").textContent = `Giorni rimanenti: ${daysLeft} : ${hoursLeft} : ${minuteLeft} : ${secondLeft}`;
 
     // Abilita il bottone se il countdown è finito
     if (daysLeft <= 0) {
