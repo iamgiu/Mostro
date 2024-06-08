@@ -1,13 +1,13 @@
-Narratore:  Cillo si allontana dal negozio, indossando con orgoglio le nuove scarpe comode che haa appena ottenuto da Shuba. 
-            Con passo deciso, si dirige verso il campetto da basket, sperando di trovare una soluzione al suo problema.
-            Arrivato al campetto, si ferma un attimo, scrutando l'area circostante. 
+Narratore:  Cillo ti allontani dal negozio, indossando con orgoglio le nuove scarpe comode che hai appena ottenuto da Shuba. 
+            Con passo deciso, ti dirigi verso il campetto da basket, sperando di trovare una soluzione al tuo problema.
+            Arrivato al campetto, ti fermi un attimo, scrutando l'area circostante. 
             Ma il campo è deserto, vede solo un cespuglio che vola via.
-            Cillo sospira.
+            Sospiri.
 
 Cillo:      Sembra che sia arrivato troppo tardi. Non c'è nessuno qui.
 
-Narratore:  Proprio quando sta per voltarsi e tornare indietro, un rumore improvviso lo fa sobbalzare. 
-            Alza lo sguardo e vede Power, che plana dall'alto come se fosse caduta dal cielo.
+Narratore:  Proprio quando stai per voltarti e tornare indietro, un rumore improvviso ti fa sobbalzare. 
+            Alzi lo sguardo e vedi Power, che plana dall'alto come se fosse caduta dal cielo.
 
 Cillo:      Power?
 
@@ -15,7 +15,7 @@ Power:      Ah, Cillo, Cillo, Cillo... Sai quanto mi piace una bella partita a b
 
 Cillo:      In realtà no.
 
-Narratore:  Power fa finta di non sentirlo, continuando con il suo monologo.
+Narratore:  Power fa finta di non sentirti, continuando con il suo monologo.
 
 Power:      Quando ho sentito che avevi bisogno di un po' di aiuto, ho pensato: "Beh, è tempo di fare il mio ingresso!"
 
@@ -45,4 +45,4 @@ Cillo:      Grazie. Posso farti ancora una domanda?
 Power:      Assolutamente no, mica sono qua a tua disposizione. Ora vai, devo trovare qualcosa da fare per ammazzare il tempo.
             Ci sono! Ammmazzare! Cioè, volevo dire, in bocca al lupo Cillo!
 
-Narratore:  Un po' interdetto, Cillo ritorna sui suoi passi, insieme al barile datogli dal demone. Speriamo sia utile.
+Narratore:  Un po' interdetto, ritorni sui tuoi passi, insieme al barile dato dal demone. Speriamo sia utile.

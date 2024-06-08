@@ -28,8 +28,16 @@ let currentIndexes = {
   "BoscoPasketta": 0,
   "BoscoPaskettaWin": 0,
   "BoscoPaskettaLose": 0,
+  "GragussySleeping": 0,
+  "NegozioScarpe": 0,
+  "NegozioScarpeWin": 0,
+  "NegozioScarpeLose":0,
   "CampoBasket": 0,
-  "CampoBasketWin": 0
+  "CampoBasketWin": 0,
+  "GragussyWake":0,
+  "Salon":0,
+  "SalonWin":0,
+  "MonteMostro":0,
 };
 
 let dialogues;
@@ -63,11 +71,35 @@ function startDialogue(placeDialogue) {
     case 'BoscoPaskettaLose':
       dialogues = dialoguesBoscoPaskettaLose;
       break;
+    case 'GragussySleeping':
+      dialogues = dialoguesGragussy;
+      break;
+    case 'NegozioScarpe':
+      dialogues = dialoguesNegozioScarpe;
+      break;
+    case 'NegozioScarpeWin':
+      dialogues = dialoguesNegozioScarpeWin;
+      break;
+    case 'NegozioScarpeLose':
+      dialogues = dialoguesNegozioScarpeLose;
+      break;
     case 'CampoBasket':
       dialogues = dialoguesCampoBasket;
       break;
     case 'CampoBasketWin':
       dialogues = dialoguesCampoBasketWin;
+      break;
+    case 'GragussyWake':
+      dialogues = dialoguesGragussyWake;
+      break;
+    case 'Salon':
+      dialogues = dialoguesSalon;
+      break;
+    case 'SalonWin':
+      dialogues = dialoguesSalonWin;
+      break;
+    case 'MonteMostro':
+      dialogues = dialoguesMonteMostro;
       break;
   }
   
@@ -102,15 +134,19 @@ function endDialogue() {
       }
       break;
     case 'BoscoPaskettaWin':
-      setMapInnerHTML(3, "GragussySleeping", "Gragussy Sleeping");
+      setMapInnerHTML(3, "GragussySleeping", "Gragussy");
       break;
     case 'BoscoPaskettaLose':
       if(currentIndexes[place] == dialogues.length) {
         tris.style.visibility = 'visible';
       }
       break;
+    case 'GragussySleeping':
+      setMapInnerHTML(4, "NegozioScarpe", "Negozio di Shuba");
+      document.getElementById(mapElements[3]).innerHTML = '<img class="imageUnavailable" src="Immagini/Places/GragussyWakeUnavailable.png">'; 
+      break;
     case 'NegozioScarpe':
-      setMapInnerHTML(4, "CampoBasket", "Campo Basket");
+      setMapInnerHTML(5, "CampoBasket", "Campo Basket");
       break;
     case 'CampoBasket':
       if(currentIndexes[place] == dialogues.length) {
@@ -121,16 +157,20 @@ function endDialogue() {
       }
       break;
     case 'CampoBasketWin':
-      setMapInnerHTML(5, "Salon", "Salon");
+      setMapInnerHTML(3, "GragussyWake", "Gragussy");
       break;
+    case 'GragussyWake':
+      setMapInnerHTML(6, "Salon", "Salon");
+    break;
     case 'Salon':
+      if(currentIndexes[place] == dialogues.length) {
+        bottoneSalon.style.visibility = 'visible';
+      }
       break;
     case 'SalonWin':
-      setMapInnerHTML(6, "MonteMostro", "Monte Mostro");
+      setMapInnerHTML(7, "MonteMostro", "Monte Mostro");
       break;
-    case 'SalonLose':
-      break;
-    case '':
+    case 'MonteMostro':
       break;
   }
 }

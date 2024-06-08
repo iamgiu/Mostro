@@ -1,10 +1,10 @@
-Narratore:  Dopo ore di cammino, finalmente Cillo raggiunge il Monte Mostro.
+Narratore:  Dopo ore di cammino, finalmente raggiungi il Monte Mostro.
             La cima è sorprendentemente tranquilla. 
             Il terreno è pianeggiante e coperto da un sottile strato di erba verde, che ondeggia leggermente al flebile venticello. 
             L'aria è serena e silenziosa, quasi surreale dopo il tumultuoso viaggio per arrivare fin qui.
             Al centro si trova un piedistallo, decorato con incisioni intricate che raccontano storie di tempi passati.
-            Cillo ci si avvicina, e nota un libro appoggiato sopra ad esso. La curiosità prende il sopravvento e lo apre.
-            Guarda la prima pagina ed è vuota. La seconda, la terza e la quarta anche, e così tutte le altre.
+            Ti avvicini, e noti un libro appoggiato sopra ad esso. La curiosità prende il sopravvento e lo apri.
+            Guardi la prima pagina ed è vuota. La seconda, la terza e la quarta anche, e così tutte le altre.
 
 Cillo:      Ma che cazzo?
 
@@ -19,7 +19,7 @@ Narratore:  Frieren si avvicina e sul libro compare una scritta:
 
 Cillo:      E' uno scherzo?
 
-Narratore:  Non riceve risposta. Quando alza lo sguardo per cercarla, l'elfa è scomparsa.
+Narratore:  Non ricevi risposta. Quando alzi lo sguardo per cercarla, l'elfa è scomparsa.
 
 Cillo:      Frieren?!
 
@@ -27,7 +27,7 @@ Narratore:  Ancora nessuna risposta.
 
 Cillo:      Dio, che palle.
 
-???:        Woof!!!!!!
+Kiba:        Woof!!!!!!
 
 Narratore:  Si gira verso l'abbaio.
 
@@ -35,8 +35,8 @@ Cillo:      Kiba?
 
 Kiba:       Woof!!! Woof!!!
 
-Narratore:  Cammina verso il cucciolo, che inizia a correre.
-            Lo segue fino a che non vede un'enorme tavolata e tutti gli amici incontrati fino ad ora radunati intorno ad una torta gigante.
+Narratore:  Cammini verso il cucciolo, che inizia a correre.
+            Lo segui fino a che non vedi un'enorme tavolata e tutti gli amici incontrati fino ad ora radunati intorno ad una torta gigante.
             In coro, procedono a dirti:
             TANTI AUGURI!!!!!
 
@@ -69,8 +69,8 @@ Cillo:      Grazie ragazzi.
 
 Utahime:    Ora godiamoci la festa!
 
-Narratore:  Iniziarono cosi i festeggiamenti per il Mostro di Udine!
-            Magari ci vedremo per una prossima avventura.
+Narratore:  Iniziano cosi i festeggiamenti per il Mostro di Udine con fiumi di alcol!
+            Il nostro viaggio di conclude qui, magari ci vedremo per una prossima avventura.
 
 (titoli di coda)
 

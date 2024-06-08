@@ -2,7 +2,7 @@ var backButton = document.getElementById("backButton");
 
 /* Map */
 var map = document.getElementById('map');
-var mapElements = ['showHouse', 'showLagoNia', 'showBoscoPasketta', 'showGragussySleeping', 'showCampoBasket', 'showNegozioScarpe', 'showSalon', 'showMonteMostro']
+var mapElements = ['showHouse', 'showLagoNia', 'showBoscoPasketta', 'showGragussySleeping', 'showNegozioScarpe', 'showCampoBasket', 'showSalon', 'showMonteMostro']
 
 /* Ambient */
 var ambient = document.getElementById('ambient');
@@ -43,7 +43,7 @@ const paragraphs = [
     "Solo per un misero 16%, che da quella staffa. A fronte delle cure di arcanisti che ad Elsweyr non c'erano.",
     "Chi siamo noi per spegnere un entusiasmo del genere?",
     "Io non tratto set, io tratto le mani delle persone.",
-    "Questa è la build del Sorcerer Magicka No Pet aggiornata ad Elsweyr da parte di @iTzCillo: Razza: Elfo Alto (Consigliata), Bretone (consigliata) Mundus: The Shadow (Trials), The Lover (Dungeon & Maelstrom) Cibo: Clockwork Citrus Filet / Witchmother’s Potent Brew, Double Bloody Mara Pozioni: Essence of Spell Power (Corn Flower, Lady’s Smock, Water Hyachint) Vampirismo: Obbligatorio, livello 2"
+    "Questa è la build del Sorcerer Magicka No Pet aggiornata ad Elsweyr da parte di @iTzCillo: Razza: Elfo Alto (Consigliata)."
 ];
 
 /* Score */

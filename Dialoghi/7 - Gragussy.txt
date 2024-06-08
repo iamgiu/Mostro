@@ -1,6 +1,6 @@
-Narratore:  Dopo aver recuperato il barile, il mostro... nostro eroe ritorna sui suoi passi. 
+Narratore:  Dopo aver recuperato il barile, il mostro... ovvero tu ritorni sui tuoi passi. 
             La maestosa figura del gigante giace immobile davanti a lui, un ostacolo imponente che sembra insormontabile. 
-            Con passi decisi, si avvicina e posa il barile di birra accanto a Gragussy addormentato, osservando con ansia la sua reazione.
+            Con passi decisi, ti avvicini e posi il barile di birra accanto a Gragussy addormentato, osservando con ansia la sua reazione.
             Il colosso procede a grugnire leggermente nel sonno, risvegliandosi poi improvvisamente. 
 
 Gragussy:   Che cosa...?
@@ -16,7 +16,7 @@ Narratore:  Si china per prendere il barile e lo guarda con interesse, prima di 
 Gragussy:   Ah, che birra! Questo mi dà la carica!
 
 Narratore:  Con un movimento fluido, Gragussy si rialza in piedi, il suo imponente corpo tremolante di energia. 
-            Con un cenno verso Cillo, indica la strada liberata dietro di lui, offrendo un sorriso compiaciuto.
+            Con un cenno verso di te, indica la strada liberata dietro di lui, offrendo un sorriso compiaciuto.
             Una via larga e aperta si estende verso l'orizzonte, invitandolo a proseguire il suo viaggio. 
             Lungo i lati della strada, alti alberi si ergono fieri, mentre il sole filtra attraverso le fronde, creando pattern di luci danzanti sul selciato.
             Ai margini della strada, un edificio imponente si staglia contro il cielo, con le sue mura maestose e le finestre che brillano al sole.
