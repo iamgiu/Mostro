@@ -173,6 +173,7 @@ function endDialogue() {
       setMapInnerHTML(7, "MonteMostro", "Monte Mostro");
       break;
     case 'MonteMostro':
+      window.open('titoli_di_coda.html', "_self");
       break;
   }
 }

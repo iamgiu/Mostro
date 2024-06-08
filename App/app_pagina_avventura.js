@@ -138,6 +138,7 @@ function stopGame() {
     wrapper.style.visibility = 'hidden';
     if(bottoneSalon.style.visibility == 'visible')
         minigiocoBibik.style.visibility = 'visible';
+    startDialogue("SalonWin");
 }
 
 function loadParagraph() {
