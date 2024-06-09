@@ -127,6 +127,7 @@ function endDialogue() {
       break;
     case 'LagoNia':
       setMapInnerHTML(2, "BoscoPasketta", "Bosco Pasketta");
+      generateQuiz("LagoNia", questions, quizContainer, resultsContainer, submitButton);
       break;
     case 'BoscoPasketta':
       if(currentIndexes[place] == dialogues.length) {
@@ -147,7 +148,10 @@ function endDialogue() {
       document.getElementById(mapElements[3]).innerHTML = '<img class="imageUnavailable" src="Immagini/Places/GragussyWakeUnavailable.png">'; 
       break;
     case 'NegozioScarpe':
-      setMapInnerHTML(5, "CampoBasket", "Campo Basket");
+      generateQuiz("NegozioScarpe", questions, quizContainer, resultsContainer, submitButton);
+      break;
+    case 'NegozioScarpeWin':
+      setMapInnerHTML(5, "CampoBasket", "Campo Basket");  
       break;
     case 'CampoBasket':
       if(currentIndexes[place] == dialogues.length) {

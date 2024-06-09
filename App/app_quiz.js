@@ -1,4 +1,4 @@
-let place;
+let placeQ;
 let questions;
 
 var quizContainer = document.getElementById('quizContainer');
@@ -7,9 +7,9 @@ var submitButton = document.getElementById('submit');
   
 function generateQuiz(placeQuiz, questions, quizContainer, resultsContainer, submitButton){
 
-    place = placeQuiz;
+    placeQ = placeQuiz;
 
-    switch(place) {
+    switch(placeQ) {
         case 'LagoNia':
             questions = questionhxh;
             break;
@@ -38,7 +38,7 @@ function generateQuiz(placeQuiz, questions, quizContainer, resultsContainer, sub
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
-                    + '</label>'
+                    + '</label><br>'
                 );
             }
     
@@ -96,4 +96,5 @@ function generateQuiz(placeQuiz, questions, quizContainer, resultsContainer, sub
 	}
 }
 
-generateQuiz(questions, quizContainer, resultsContainer, submitButton);
+generateQuiz("LagoNia", questions, quizContainer, resultsContainer, submitButton);
+generateQuiz("NegozioScarpe", questions, quizContainer, resultsContainer, submitButton);
