@@ -15,7 +15,7 @@ function updateCountdown() {
     const secondLeft = Math.ceil((difference % (1000 * 60)) / 1000);
 
     // Aggiorna il testo del countdown
-    document.getElementById("countdown").textContent = `Giorni rimanenti: ${daysLeft} : ${hoursLeft} : ${minuteLeft} : ${secondLeft}`;
+    document.getElementById("countdown").textContent = `Tempo rimanente ${daysLeft} : ${hoursLeft} : ${minuteLeft} : ${secondLeft}`;
 
     // Abilita il bottone se il countdown è finito
     if (daysLeft <= 0) {
