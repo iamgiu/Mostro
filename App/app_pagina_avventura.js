@@ -9,6 +9,9 @@ var ambient = document.getElementById('ambient');
 var previousAmbient = "";
 var animation = document.getElementById('animation');
 
+/*Quiz LagoNia */
+var quiz = document.getElementById('quiz-box');
+
 /* Tris Bosco Pasketta */
 var tris = document.getElementById('tris');
 
@@ -71,6 +74,10 @@ function setBackAmbient() {
     ambient.src = "";
     backButton.style.visibility = 'hidden';
 
+    if(previousAmbient == 'LagoNia') {
+        setLago('hidden');
+    }
+
     if(previousAmbient == 'BoscoPasketta') {
         setBosco('hidden');
     }
@@ -102,6 +109,10 @@ function setMap(status) {
         current = document.getElementById(mapElements[i]);
         current.style.visibility = status;
     }
+}
+
+function setLago(status) {
+    quiz.style.visibility = status;
 }
 
 function setBosco(status) {

@@ -62,6 +62,12 @@ function startDialogue(placeDialogue) {
     case 'LagoNia':
       dialogues = dialoguesLagoNia;
       break;
+    case 'LagoNiaWin':
+      dialogues = dialoguesLagoNiaWin;
+      break;
+    case 'LagoNiaLose':
+      dialogues = dialoguesLagoNiaLose;
+      break;
     case 'BoscoPasketta':
       dialogues = dialoguesBoscoPasketta;
       break;
@@ -126,8 +132,19 @@ function endDialogue() {
       setMapInnerHTML(1, "LagoNia", "Lago Nia");
       break;
     case 'LagoNia':
+      if(currentIndexes[place] == dialogues.length) {
+        startQuiz("LagoNia")
+        quiz.style.visibility = 'visible';
+      }
+      break;
+    case 'LagoNiaWin':
       setMapInnerHTML(2, "BoscoPasketta", "Bosco Pasketta");
-      generateQuiz("LagoNia", questions, quizContainer, resultsContainer, submitButton);
+      break;
+    case 'LagoNiaLose':
+      if(currentIndexes[place] == dialogues.length) {
+        quiz.style.visibility = 'visible';
+      }
+      currentIndexes[place] = 0;
       break;
     case 'BoscoPasketta':
       if(currentIndexes[place] == dialogues.length) {
@@ -148,10 +165,22 @@ function endDialogue() {
       document.getElementById(mapElements[3]).innerHTML = '<img class="imageUnavailable" src="Immagini/Places/GragussyWakeUnavailable.png">'; 
       break;
     case 'NegozioScarpe':
-      generateQuiz("NegozioScarpe", questions, quizContainer, resultsContainer, submitButton);
+      if(currentIndexes[place] == dialogues.length) {
+        startQuiz("NegozioScarpe");
+        setScore();
+        showScore();
+        scoreElement.style.visibility = 'visible';
+        quizapp.style.visibility = 'visible';
+      }
       break;
     case 'NegozioScarpeWin':
       setMapInnerHTML(5, "CampoBasket", "Campo Basket");  
+      break;
+    case 'NegozioScarpeLose':
+      if(currentIndexes[place] == dialogues.length) {
+        quizapp.style.visibility = 'visible';
+      }
+      currentIndexes[place] = 0;
       break;
     case 'CampoBasket':
       if(currentIndexes[place] == dialogues.length) {

@@ -1,100 +1,78 @@
-let placeQ;
-let questions;
+let currentQuestionIndex = 0;
+let correctAnswers = 0;
+const quizBox = document.getElementById('quiz-box');
+const questionElement = document.getElementById('question');
+const answersElement = document.getElementById('answers');
+const nextQ = document.getElementById('next-btn');
+const finishQ = document.getElementById('finish-btn');
+const scoreQ = document.getElementById('scoreQ');
 
-var quizContainer = document.getElementById('quizContainer');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
-  
-function generateQuiz(placeQuiz, questions, quizContainer, resultsContainer, submitButton){
-
-    placeQ = placeQuiz;
-
-    switch(placeQ) {
-        case 'LagoNia':
-            questions = questionhxh;
-            break;
-        case 'NegozioScarpe':
-            questions = questionbasket;
-            break;
-    }
-
-    function showQuestions(questions, quizContainer){
-        // we'll need a place to store the output and the answer choices
-        var output = [];
-        var answers;
-    
-        // for each question...
-        for(var i=0; i<questions.length; i++){
-            
-            // first reset the list of answers
-            answers = [];
-    
-            // for each available answer to this question...
-            for(letter in questions[i].answers){
-    
-                // ...add an html radio button
-                answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label><br>'
-                );
-            }
-    
-            // add this question and its answers to the output
-            output.push(
-                '<div class="question">' + questions[i].question + '</div>'
-                + '<div class="answers">' + answers.join('') + '</div>'
-            );
-        }
-    
-        // finally combine our output list into one string of html and put it on the page
-        quizContainer.innerHTML = output.join('');
-    }
-
-	function showResults(questions, quizContainer, resultsContainer){
-	
-        // gather answer containers from our quiz
-        var answerContainers = quizContainer.querySelectorAll('.answers');
-        
-        // keep track of user's answers
-        var userAnswer = '';
-        var numCorrect = 0;
-        
-        // for each question...
-        for(var i=0; i<questions.length; i++){
-    
-            // find selected answer
-            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-            
-            // if answer is correct
-            if(userAnswer===questions[i].correctAnswer){
-                // add to the number of correct answers
-                numCorrect++;
-                
-                // color the answers green
-                answerContainers[i].style.color = 'lightgreen';
-            }
-            // if answer is wrong or blank
-            else{
-                // color the answers red
-                answerContainers[i].style.color = 'red';
-            }
-        }
-    
-        // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-    }
-
-	// show the questions
-	showQuestions(questions, quizContainer);
-
-	// when user clicks submit, show results
-	submitButton.onclick = function(){
-		showResults(questions, quizContainer, resultsContainer);
-	}
+function startQuiz() {
+    questions = questionhxh;
+    showQuestion();
+    nextQ.addEventListener('click', nextQuestion);
+    finishQ.addEventListener('click', finishQuiz);
 }
 
-generateQuiz("LagoNia", questions, quizContainer, resultsContainer, submitButton);
-generateQuiz("NegozioScarpe", questions, quizContainer, resultsContainer, submitButton);
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+    answersElement.innerHTML = '';
+
+    for (const key in currentQuestion.answers) {
+        const answerText = currentQuestion.answers[key];
+        const button = document.createElement('button');
+        button.textContent = answerText;
+        button.addEventListener('click', () => checkAnswer(key));
+        answersElement.appendChild(button);
+    }
+}
+
+function checkAnswer(selectedAnswer) {
+    const currentQuestion = questions[currentQuestionIndex];
+    const correctAnswer = currentQuestion.correctAnswer;
+
+    if (selectedAnswer === correctAnswer) {
+        event.target.classList.add('correct');
+        correctAnswers++;
+    } else {
+        event.target.classList.add('incorrect');
+    }
+
+    disableButtons();
+}
+
+function disableButtons() {
+    const buttons = answersElement.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.disabled = true;
+        if (!button.classList.contains('correct') && !button.classList.contains('incorrect')) {
+            button.style.opacity = 0.5;
+        }
+    });
+}
+
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        finishQ.style.display = 'block';
+        nextQ.style.display = 'none';
+        scoreQ.textContent = `Score: ${correctAnswers} out of ${questions.length}`;
+        scoreQ.style.display = 'block';
+    }
+}
+
+function finishQuiz() {
+    if (correctAnswers >= 7) {
+        startDialogue("LagoNiaWin");
+        setLago('hidden');
+    } else {
+        startDialogue("LagoNiaLose");
+        startQuiz('LagoNia');
+    }
+    // Puoi aggiungere altre azioni al termine del quiz qui
+}
+
+startQuiz('LagoNia');
