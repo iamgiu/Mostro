@@ -128,7 +128,7 @@ const dialoguesLagoNia = [
 const dialoguesLagoNiaWin = [
     {
         character: "Killua",
-        text: "Wow, sei stato impressionante! Hai risposto correttamente a tutte e sette le domande. Sei pronto per scoprire come attraversare il lago?"
+        text: "Wow, sei stato impressionante! Hai risposto correttamente ad almeno sette domande. Sei pronto per scoprire come attraversare il lago?"
     },
     {
         character: "Cillo",
@@ -163,7 +163,7 @@ const dialoguesLagoNiaWin = [
 const dialoguesLagoNiaLose = [
     {
         character: "Narratore",
-        text: "Narratore:  Si, ma mettici più impegno! Dai, ti diamo un altro tentativo."
+        text: "Si, ma mettici più impegno! Dai, ti diamo un altro tentativo."
     }
 ];
 

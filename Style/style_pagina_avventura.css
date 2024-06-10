@@ -160,7 +160,7 @@ body {
 }
 
 /* Salon */
-#wrapper {
+#wrapper  {
   width: 850px;
   height: auto;
   position: absolute;
@@ -177,7 +177,7 @@ body {
   z-index: -999;
   position: absolute;
 }
-.content-box{
+.content-box {
   padding: 13px 20px 0;
   border-radius: 10px;
   border: 1px solid #bfbfbf;
@@ -343,8 +343,8 @@ li:not(:first-child) span{
 #bottoneSalon {
   visibility: hidden;
     position: absolute;
-    left: 610px;
-    top: 418px;
+    bottom: 25px;
+    right: 25px;
     cursor: pointer;
     transition: bottom 1s ease-in-out;
 }
@@ -402,20 +402,27 @@ li:not(:first-child) span{
   text-align: center;
 }
 
+/* Quiz */
 #quiz-box {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
+  width: 650px;
+  height: 350px;
+  position: absolute;
+  left: 240px;
+  top: 30px;
+  visibility: hidden;
+  display: block;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
-button {
+#quiz-box button {
   display: block;
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px;
+  width: 130px;
+  height: 80px;
+  display: inline-block;
+  margin: 25px 10px 0 10px;
   background-color: #3498db;
   color: white;
   border: none;
@@ -423,15 +430,28 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#next-btn {
+  position: absolute;
+  left: 255px;
+  bottom: 20px;
+}
+
+#finish-btn {
+  position: absolute;
+  left: 255px;
+  bottom: 20px;
+  visibility: hidden;
+}
+
+#quiz-box button:hover {
   background-color: #2980b9;
 }
 
-button.correct {
+#quiz-box button.correct {
   background-color: #27ae60;
 }
 
-button.incorrect {
+#quiz-box button.incorrect {
   background-color: #e74c3c;
 }
 

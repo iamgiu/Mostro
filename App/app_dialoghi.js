@@ -25,6 +25,8 @@ let currentIndexes = {
   "Map": 0,
   "House": 0,
   "LagoNia": 0,
+  "LagoNiaWin": 0,
+  "LagoNiaLose": 0,
   "BoscoPasketta": 0,
   "BoscoPaskettaWin": 0,
   "BoscoPaskettaLose": 0,
@@ -134,17 +136,21 @@ function endDialogue() {
     case 'LagoNia':
       if(currentIndexes[place] == dialogues.length) {
         startQuiz("LagoNia")
-        quiz.style.visibility = 'visible';
+        quizBox.style.visibility = 'visible';
       }
       break;
     case 'LagoNiaWin':
       setMapInnerHTML(2, "BoscoPasketta", "Bosco Pasketta");
+      quizBox.style.visibility = 'hidden';
+      finishQ.style.visibility = 'hidden';
       break;
     case 'LagoNiaLose':
       if(currentIndexes[place] == dialogues.length) {
-        quiz.style.visibility = 'visible';
+        quizBox.style.visibility = 'visible';
       }
+      finishQ.style.visibility = 'hidden';
       currentIndexes[place] = 0;
+      startQuiz('LagoNia');
       break;
     case 'BoscoPasketta':
       if(currentIndexes[place] == dialogues.length) {
@@ -167,10 +173,7 @@ function endDialogue() {
     case 'NegozioScarpe':
       if(currentIndexes[place] == dialogues.length) {
         startQuiz("NegozioScarpe");
-        setScore();
-        showScore();
-        scoreElement.style.visibility = 'visible';
-        quizapp.style.visibility = 'visible';
+        quizBox.style.visibility = 'visible';
       }
       break;
     case 'NegozioScarpeWin':
@@ -178,9 +181,11 @@ function endDialogue() {
       break;
     case 'NegozioScarpeLose':
       if(currentIndexes[place] == dialogues.length) {
-        quizapp.style.visibility = 'visible';
+        quizBox.style.visibility = 'visible';
       }
+      finishQ.style.visibility = 'hidden';
       currentIndexes[place] = 0;
+      startQuiz('NegozioScarpe');
       break;
     case 'CampoBasket':
       if(currentIndexes[place] == dialogues.length) {
@@ -203,6 +208,8 @@ function endDialogue() {
       }
       break;
     case 'SalonWin':
+      bottoneSalon.style.visibility = 'hidden';
+      minigiocoBibik.style.visibility = 'hidden';
       setMapInnerHTML(7, "MonteMostro", "Monte Mostro");
       break;
     case 'MonteMostro':

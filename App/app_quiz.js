@@ -6,12 +6,26 @@ const answersElement = document.getElementById('answers');
 const nextQ = document.getElementById('next-btn');
 const finishQ = document.getElementById('finish-btn');
 const scoreQ = document.getElementById('scoreQ');
+let typeQ;
 
-function startQuiz() {
-    questions = questionhxh;
+function startQuiz(type) {
+    typeQ = type;
+    if(typeQ == 'LagoNia')
+        questions = questionhxh;
+    else
+        questions = questionbasket;
+    currentQuestionIndex = 0;
     showQuestion();
     nextQ.addEventListener('click', nextQuestion);
     finishQ.addEventListener('click', finishQuiz);
+    
+    if (currentQuestionIndex == questions.length - 1) {
+        nextQ.style.visibility = 'visible';
+        finishQ.disabled = true;
+    } else {
+        finishQ.style.visibility = 'hidden';
+        nextQ.disabled = true;
+    }
 }
 
 function showQuestion() {
@@ -26,6 +40,7 @@ function showQuestion() {
         button.addEventListener('click', () => checkAnswer(key));
         answersElement.appendChild(button);
     }
+
 }
 
 function checkAnswer(selectedAnswer) {
@@ -50,6 +65,13 @@ function disableButtons() {
             button.style.opacity = 0.5;
         }
     });
+    if (currentQuestionIndex == questions.length - 1) {
+        finishQ.style.visibility = 'visible';
+        finishQ.disabled = false;
+    } else {
+        nextQ.disabled = false;
+    }
+
 }
 
 function nextQuestion() {
@@ -65,14 +87,21 @@ function nextQuestion() {
 }
 
 function finishQuiz() {
-    if (correctAnswers >= 7) {
-        startDialogue("LagoNiaWin");
-        setLago('hidden');
+    if (typeQ == 'LagoNia') {
+        if (correctAnswers >= 7) {
+            startDialogue("LagoNiaWin");
+            setLago('hidden');
+        } else {
+            startDialogue("LagoNiaLose");
+        }
     } else {
-        startDialogue("LagoNiaLose");
-        startQuiz('LagoNia');
+        if (correctAnswers >= 7) {
+            startDialogue("NegozioScarpeWin");
+            setNegozioScarpe('hidden');
+        } else {
+            startDialogue("NegozioScarpeLose");
+        }
     }
-    // Puoi aggiungere altre azioni al termine del quiz qui
 }
 
 startQuiz('LagoNia');

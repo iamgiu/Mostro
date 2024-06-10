@@ -113,6 +113,8 @@ function setMap(status) {
 
 function setLago(status) {
     quiz.style.visibility = status;
+    nextQ.style.visibility = status;
+    finishQ.style.visibility = status;
 }
 
 function setBosco(status) {
@@ -147,8 +149,6 @@ function startGame() {
 
 function stopGame() {
     wrapper.style.visibility = 'hidden';
-    if(bottoneSalon.style.visibility == 'visible')
-        minigiocoBibik.style.visibility = 'visible';
     startDialogue("SalonWin");
 }
 
