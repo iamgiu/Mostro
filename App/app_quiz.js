@@ -20,7 +20,7 @@ function startQuiz(type) {
     finishQ.addEventListener('click', finishQuiz);
     
     if (currentQuestionIndex == questions.length - 1) {
-        nextQ.style.visibility = 'visible';
+        nextQ.style.visibility = 'hidden';
         finishQ.disabled = true;
     } else {
         finishQ.style.visibility = 'hidden';
@@ -41,6 +41,15 @@ function showQuestion() {
         answersElement.appendChild(button);
     }
 
+    if (currentQuestionIndex == questions.length - 1) {
+        nextQ.style.visibility = 'hidden';
+        finishQ.style.visibility = 'visible';
+        finishQ.disabled = true;
+    } else {
+        nextQ.style.visibility = 'visible';
+        finishQ.style.visibility = 'hidden';
+        nextQ.disabled = true;
+    }
 }
 
 function checkAnswer(selectedAnswer) {
@@ -66,12 +75,10 @@ function disableButtons() {
         }
     });
     if (currentQuestionIndex == questions.length - 1) {
-        finishQ.style.visibility = 'visible';
         finishQ.disabled = false;
     } else {
         nextQ.disabled = false;
     }
-
 }
 
 function nextQuestion() {
@@ -81,7 +88,6 @@ function nextQuestion() {
     } else {
         finishQ.style.display = 'block';
         nextQ.style.display = 'none';
-        scoreQ.textContent = `Score: ${correctAnswers} out of ${questions.length}`;
         scoreQ.style.display = 'block';
     }
 }
@@ -90,18 +96,16 @@ function finishQuiz() {
     if (typeQ == 'LagoNia') {
         if (correctAnswers >= 7) {
             startDialogue("LagoNiaWin");
-            setLago('hidden');
+            setQuiz('hidden');
         } else {
             startDialogue("LagoNiaLose");
         }
     } else {
         if (correctAnswers >= 7) {
             startDialogue("NegozioScarpeWin");
-            setNegozioScarpe('hidden');
+            setQuiz('hidden');
         } else {
             startDialogue("NegozioScarpeLose");
         }
     }
 }
-
-startQuiz('LagoNia');

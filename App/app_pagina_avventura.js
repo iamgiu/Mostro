@@ -74,8 +74,8 @@ function setBackAmbient() {
     ambient.src = "";
     backButton.style.visibility = 'hidden';
 
-    if(previousAmbient == 'LagoNia') {
-        setLago('hidden');
+    if(previousAmbient == 'LagoNia' || previousAmbient == 'NegozioScarpe') {
+        setQuiz('hidden');
     }
 
     if(previousAmbient == 'BoscoPasketta') {
@@ -111,10 +111,10 @@ function setMap(status) {
     }
 }
 
-function setLago(status) {
+function setQuiz(status) {
     quiz.style.visibility = status;
     nextQ.style.visibility = status;
-    finishQ.style.visibility = status;
+    finishQ.style.visibility = 'hidden';
 }
 
 function setBosco(status) {

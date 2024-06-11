@@ -434,6 +434,7 @@ li:not(:first-child) span{
   position: absolute;
   left: 255px;
   bottom: 20px;
+  visibility: hidden;
 }
 
 #finish-btn {
