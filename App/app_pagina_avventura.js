@@ -140,7 +140,7 @@ function setSalon(status) {
 /* Minigioco Salon */
 function startGame() {
     wrapper.style.visibility = 'visible';
-    minigiocoBibik.style.visibility = 'hidden';
+    setSalon('hidden');
     resetGame();
     inpField.addEventListener("input", initTyping);
     tryAgainBtn.addEventListener("click", resetGame);

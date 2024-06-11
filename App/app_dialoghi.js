@@ -203,13 +203,11 @@ function endDialogue() {
     break;
     case 'Salon':
       if(currentIndexes[place] == dialogues.length) {
-        bottoneSalon.style.visibility = 'visible';
-        minigiocoBibik.style.visibility = 'visible';
+        setSalon('visible');
       }
       break;
     case 'SalonWin':
-      bottoneSalon.style.visibility = 'hidden';
-      minigiocoBibik.style.visibility = 'hidden';
+      setSalon('hidden');
       setMapInnerHTML(7, "MonteMostro", "Monte Mostro");
       break;
     case 'MonteMostro':
