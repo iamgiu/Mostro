@@ -32,13 +32,16 @@ function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     answersElement.innerHTML = '';
+    let n = 1;
 
     for (const key in currentQuestion.answers) {
         const answerText = currentQuestion.answers[key];
         const button = document.createElement('button');
+        button.classList.add('ans' + n);
         button.textContent = answerText;
         button.addEventListener('click', () => checkAnswer(key));
         answersElement.appendChild(button);
+        n++;
     }
 
     if (currentQuestionIndex == questions.length - 1) {
