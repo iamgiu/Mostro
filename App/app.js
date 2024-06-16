@@ -1,35 +1,37 @@
-// Setta la data del compleanno
-const birthday = new Date("2024-06-18 00:00");
-const titolo = document.getElementById("titolo");
+// Imposta la data del compleanno
+const birthday = new Date("2024-06-18T00:00:00");
 
-document.getElementById("startGame").style.display = "none";
+// Ottieni gli elementi del DOM
+const titolo = document.getElementById("titolo");
+const startGameButton = document.getElementById("startGame");
+const countdownElement = document.getElementById("countdown");
+
+// Nascondi il pulsante di avvio all'inizio
+startGameButton.style.display = "none";
 
 // Funzione per aggiornare il countdown
 function updateCountdown() {
     const currentDate = new Date();
     const difference = birthday - currentDate;
 
-    const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
-    const hoursLeft = Math.ceil((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minuteLeft = Math.ceil((difference % (1000 * 60 * 60)) / (1000 * 60));
-    const secondLeft = Math.ceil((difference % (1000 * 60)) / 1000);
+    if (difference <= 0) {
+        // Se il countdown è finito, mostra il pulsante e nascondi il countdown
+        startGameButton.style.display = "block";
+        countdownElement.style.display = "none";
+
+        // Aggiorna il testo del titolo
+        titolo.textContent = titolo.textContent.replace('TOCCA ASPETTARE', 'CI SIAMO');
+        return;
+    }
+
+    const secondsLeft = Math.floor(difference / 1000);
+    const daysLeft = Math.floor(secondsLeft / (60 * 60 * 24));
+    const hoursLeft = Math.floor((secondsLeft % (60 * 60 * 24)) / (60 * 60));
+    const minutesLeft = Math.floor((secondsLeft % (60 * 60)) / 60);
+    const secondsRemaining = secondsLeft % 60;
 
     // Aggiorna il testo del countdown
-    document.getElementById("countdown").textContent = `Tempo rimanente ${daysLeft} : ${hoursLeft} : ${minuteLeft} : ${secondLeft}`;
-
-    // Abilita il bottone se il countdown è finito
-    if (daysLeft <= 0) {
-        document.getElementById("startGame").style.display = "block";
-        document.getElementById("countdown").style.display = "none";
-        // Ottieni il testo all'interno dell'elemento h1
-        var originalText = titolo.textContent;
-
-        // Sostituisci le parole desiderate
-        var modifiedText = originalText.replace('TOCCA ASPETTARE', 'CI SIAMO');
-
-        // Assegna il nuovo testo all'elemento h1
-        titolo.textContent = modifiedText;
-    }
+    countdownElement.textContent = `Tempo rimanente ${daysLeft} : ${hoursLeft} : ${minutesLeft} : ${secondsRemaining}`;
 }
 
 // Aggiorna il countdown ogni secondo
