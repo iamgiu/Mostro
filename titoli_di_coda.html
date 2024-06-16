@@ -12,36 +12,36 @@
     <body>
         <div class="split2">
             <div id = "credits">
-                <h1>Titoli di Coda</h1>
-                <h2>AUGURI MOSTRO</h2>
+                <h1>AUGURI MOSTRO</h1>
         
-                <h3>Creato da:</h3>
+                <h3>CREATO DA</h3>
                 <p>Giù</p>
         
-                <h3>Partecipanti Speciali:</h3>
+                <h3>PARTECIPANTI SPECIALI</h3>
                 <p>Doje</p>
                 <p>Me Medesima</p>
         
-                <h3>Animazione e Design:</h3>
+                <h3>ANIMAZIONE E DESIGN</h3>
                 <p>Doje il matematico</p>
         
-                <h3>Musica:</h3>
+                <h3>MUSICA</h3>
                 <p>"Pedro" di Raffaella Carrà</p>
                 <p>"Another Love" di Gragussy</p>
         
-                <h3>Supporto Tecnico:</h3>
+                <h3>SUPPORTO TECNICO</h3>
                 <p>Doje</p>
                 <p>Manie di grandezza mie e di Doje</p>
         
-                <h3>Ringraziamenti Speciali:</h3>
+                <h3>RINGRAZIAMENTI SPECIALI</h3>
                 <p>Me, myself and I</p>
                 <p>Boh si anche Doje</p>
         
-                <h3>Dedica:</h3>
+                <h3>DEDICA</h3>
                 <p>Auguri e ricordati ti ritirare il tuo dono scemotto: "CODICE"</p>
         
-                <p>&copy; 2024 Bro's Company</p>
+                
                 <p>Grazie per aver giocato!</p>
+                <span>&copy; 2024 Bro's Company</span><br/>
             </div>
 
             <!-- Slideshow container -->
@@ -55,17 +55,15 @@
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                
             </div>
-        </div>
-        <br>
-          
-        <div>
             <audio id="music" controls class = "music">
                 <source src="Audio/AnotherLove.mp3" />
             </audio>
-
         </div>
-
+        <br>
+          
         <script>
             var slideContainer = document.getElementById("allSlides");
 
@@ -73,7 +71,7 @@
                 for (let i = 1; i <= n; i++) {
                     slideContainer.innerHTML += '<div class="mySlides fade"><img src="Immagini/Scleri/' + i + '.jpg"></div>';
                 }
-            } 
+            }
             printSlides(34);
         </script>
         <script type="text/javascript" src="App/app_titoli_di_coda.js"></script>
