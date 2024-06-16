@@ -414,15 +414,12 @@ li:not(:first-child) span{
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 #quiz-box button {
-  display: block;
-  width: 130px;
-  height: 80px;
   display: inline-block;
-  margin: 25px 10px 0 10px;
+  width: 140px;
+  padding: 5px;
   background-color: #3498db;
   color: white;
   border: none;
@@ -430,8 +427,37 @@ li:not(:first-child) span{
   cursor: pointer;
 }
 
+.ans1 {
+  position: absolute;
+  min-height: 110px;
+  left: 15px;
+  bottom: 120px;
+}
+
+.ans2 {
+  position: absolute;
+  min-height: 110px;
+  left: 175px;
+  bottom: 120px;
+}
+
+.ans3 {
+  position: absolute;
+  min-height: 110px;
+  left: 335px;
+  bottom: 120px;
+}
+
+.ans4 {
+  position: absolute;
+  min-height: 110px;
+  left: 495px;
+  bottom: 120px;
+}
+
 #next-btn {
   position: absolute;
+  height: 50px;
   left: 255px;
   bottom: 20px;
   visibility: hidden;
@@ -439,6 +465,7 @@ li:not(:first-child) span{
 
 #finish-btn {
   position: absolute;
+  height: 50px;
   left: 255px;
   bottom: 20px;
   visibility: hidden;
