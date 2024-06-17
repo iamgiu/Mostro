@@ -126,8 +126,8 @@ function setMapInnerHTML(n, scene, sceneText) {
 }
 
 function endDialogue() {
-  changeText("Cosa aspetti ad andare avanti?");
-  changeIcon("Narratore");
+  // Non mostrare il messaggio del narratore
+  let showNarratorMessage = true;
 
   switch(place) {
     case 'House':
@@ -137,16 +137,19 @@ function endDialogue() {
       if(currentIndexes[place] == dialogues.length) {
         startQuiz("LagoNia")
         quizBox.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       break;
     case 'LagoNiaWin':
       setMapInnerHTML(2, "BoscoPasketta", "Bosco Pasketta");
       quizBox.style.visibility = 'hidden';
       finishQ.style.visibility = 'hidden';
+      showNarratorMessage = false;
       break;
     case 'LagoNiaLose':
       if(currentIndexes[place] == dialogues.length) {
         quizBox.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       finishQ.style.visibility = 'hidden';
       currentIndexes[place] = 0;
@@ -155,33 +158,40 @@ function endDialogue() {
     case 'BoscoPasketta':
       if(currentIndexes[place] == dialogues.length) {
         tris.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       break;
     case 'BoscoPaskettaWin':
       setMapInnerHTML(3, "GragussySleeping", "Gragussy");
+      showNarratorMessage = false;
       break;
     case 'BoscoPaskettaLose':
       if(currentIndexes[place] == dialogues.length) {
         tris.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       currentIndexes[place] = 0;
       break;
     case 'GragussySleeping':
       setMapInnerHTML(4, "NegozioScarpe", "Negozio di Shuba");
       document.getElementById(mapElements[3]).innerHTML = '<img class="imageUnavailable" src="Immagini/Places/GragussyWakeUnavailable.png">'; 
+      showNarratorMessage = false;
       break;
     case 'NegozioScarpe':
       if(currentIndexes[place] == dialogues.length) {
         startQuiz("NegozioScarpe");
         quizBox.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       break;
     case 'NegozioScarpeWin':
       setMapInnerHTML(5, "CampoBasket", "Campo Basket");  
+      showNarratorMessage = false;
       break;
     case 'NegozioScarpeLose':
       if(currentIndexes[place] == dialogues.length) {
         quizBox.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       finishQ.style.visibility = 'hidden';
       currentIndexes[place] = 0;
@@ -193,26 +203,37 @@ function endDialogue() {
         showScore();
         scoreElement.style.visibility = 'visible';
         basketball.style.visibility = 'visible';
+        showNarratorMessage = false;
       }
       break;
     case 'CampoBasketWin':
       setMapInnerHTML(3, "GragussyWake", "Gragussy");
+      showNarratorMessage = false;
       break;
     case 'GragussyWake':
       setMapInnerHTML(6, "Salon", "Salon");
-    break;
+      showNarratorMessage = false;
+      break;
     case 'Salon':
       if(currentIndexes[place] == dialogues.length) {
         setSalon('visible');
+        showNarratorMessage = false;
       }
       break;
     case 'SalonWin':
       setSalon('hidden');
       setMapInnerHTML(7, "MonteMostro", "Monte Mostro");
+      showNarratorMessage = false;
       break;
     case 'MonteMostro':
       window.open('titoli_di_coda.html', "_self");
+      showNarratorMessage = false;
       break;
+  }
+
+  if (showNarratorMessage) {
+    changeText("Cosa aspetti ad andare avanti?");
+    changeIcon("Narratore");
   }
 }
 

@@ -661,7 +661,11 @@ const dialoguesSalonWin = [
 const dialoguesMonteMostro = [
     {
         character: "Narratore",
-        text: "Dopo ore di cammino, finalmente raggiungi il Monte Mostro. La cima è sorprendentemente tranquilla. Il terreno è pianeggiante e coperto da un sottile strato di erba verde, che ondeggia leggermente al flebile venticello. L'aria è serena e silenziosa, quasi surreale dopo il tumultuoso viaggio per arrivare fin qui. Al centro si trova un piedistallo, decorato con incisioni intricate che raccontano storie di tempi passati. Ti avvicini, e noti un libro appoggiato sopra ad esso. La curiosità prende il sopravvento e lo apri. Guardi la prima pagina ed è vuota. La seconda, la terza e la quarta anche, e così tutte le altre."
+        text: "Dopo ore di cammino, finalmente raggiungi il Monte Mostro. La cima è sorprendentemente tranquilla. Il terreno è pianeggiante e coperto da un sottile strato di erba verde, che ondeggia leggermente al flebile venticello. L'aria è serena e silenziosa, quasi surreale dopo il tumultuoso viaggio per arrivare fin qui."
+    },
+    {
+        character: "Narratore",
+        text: "Al centro si trova un piedistallo, decorato con incisioni intricate che raccontano storie di tempi passati. Ti avvicini, e noti un libro appoggiato sopra ad esso. La curiosità prende il sopravvento e lo apri. Guardi la prima pagina ed è vuota. La seconda, la terza e la quarta anche, e così tutte le altre."
     },
     {
         character: "Cillo",
