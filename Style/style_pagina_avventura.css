@@ -483,7 +483,21 @@ li:not(:first-child) span{
   background-color: #e74c3c;
 }
 
-#score {
-  margin-top: 20px;
-  font-size: 18px;
+#codes-book {
+  position: absolute;
+  left: 350px;
+  top: 70px;
+  visibility: hidden;
+} 
+
+#code-1 {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+#code-2 {
+  position: absolute;
+  top: 90px;
+  left: 50px;
 }

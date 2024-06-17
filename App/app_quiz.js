@@ -15,6 +15,7 @@ function startQuiz(type) {
     else
         questions = questionbasket;
     currentQuestionIndex = 0;
+    correctAnswers = 0;
     showQuestion();
     nextQ.addEventListener('click', nextQuestion);
     finishQ.addEventListener('click', finishQuiz);

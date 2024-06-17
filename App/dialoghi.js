@@ -761,7 +761,7 @@ const dialoguesMonteMostro = [
     },
     {
         character: "Narratore",
-        text: "Appare un codice..."
+        text: "Appaiono due codici..."
     },
     {
         character: "Cillo",

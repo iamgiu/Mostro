@@ -52,6 +52,9 @@ const paragraphs = [
 /* Score */
 var score;
 
+/* Libro Codici */
+var libroCodici = document.getElementById('codes-book');
+
 /* Imposta l'ambiente richiesto */
 function setAmbient(idAmbient) {
     var changeTo = "Immagini/Ambients/" + idAmbient + "Ambient.png";

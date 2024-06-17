@@ -260,6 +260,8 @@ function nextDialogue(dialogues, place) {
     setNextButton("Fine");
   }
 
+  if(place == 'MonteMostro' && currentIndexes[place] == 26)
+    libroCodici.style.visibility = 'visible';
 }
 
 startDialogue("Start");
