@@ -67,7 +67,7 @@ const questionhxh = [
             c: '5',
             d: '4'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'b'
     },
     {
         question: "Quale è il primo principio Nen che viene mostrato nell'anime?",
